@@ -1,0 +1,43 @@
+@import 'base/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body {
+  background: #E5E5E5;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+hr, p {
+  margin: 0;
+}
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+@import 'blocks/banner';
+@import 'blocks/promo';
+@import 'blocks/menu';
+@import 'blocks/avto';
+@import 'blocks/discount';
+@import 'blocks/title';
+@import 'blocks/driving';
+@import 'blocks/description';
+@import 'blocks/stages';
+@import 'blocks/price';
+@import 'blocks/forms';
+@import 'blocks/faqs';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+@import 'blocks/content';
+@import 'blocks/media';

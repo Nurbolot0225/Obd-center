@@ -1,0 +1,38 @@
+.faqs {
+    min-height: 450px;
+    padding: 80px 0 80px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 35px;
+        color: #2D2D2D;
+    }
+    &__open {
+        margin: 10px 0 35px 0;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+        color: #181818;
+        i {
+            margin: 5px 5px;
+            font-size: 23px;
+            color: #181818;
+            transition: all 0.4s ease-in-out;
+            color: #181818;
+        }
+    }
+    &__completed {
+        display: none;
+        min-width: 420px;
+        padding: 0 0 25px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #181818;
+    }
+}
+
+.active { 
+    i { 
+        transform: rotate(-180deg);
+    }
+}

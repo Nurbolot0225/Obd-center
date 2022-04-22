@@ -1,0 +1,62 @@
+.avto {
+    height: 700px;
+    padding: 70px 0 80px 0;
+    &__header {
+        font-weight: 400;
+        font-size: 16px;
+        color: #222222;
+        margin-bottom: 88px;
+        span {
+            color: #C4C4C4;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #222222;
+        margin-bottom: 24px;
+    }
+    &__descr {
+        text-indent: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: #222222;
+        margin-bottom: 56px;
+        span {
+            display: inline-block;
+            text-indent: 20px;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        background: #FF941F;
+        width: 213px;
+        height: 60px;
+        border-radius: 16px;
+        padding: 18px 60px;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        animation: radial-pulse 1.5s infinite;
+        transition: all .5s;
+        &:hover {
+            animation: none;
+            background: #E5E5E5;
+            color: #FF941F;
+            box-shadow: inset 0 0 0 3px #FF941F;
+        }
+    }
+}
+
+@keyframes radial-pulse {
+    0% {
+    box-shadow: 0 0 0 0px rgba(23, 22, 22, 0.5);
+    }
+  
+    100% {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+    }
+  }

@@ -1,0 +1,127 @@
+/* main css*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  padding-top: 20px;
+	height: 100%;
+}
+body {
+  background: #E5E5E5;
+}
+h1, h2 {
+  font-weight: bold;
+  color: #222;
+  padding: 10px;
+  padding-left: 0px;
+}
+svg {
+  vertical-align: 0;
+}
+article {
+  width: 100%;
+  float: left;
+}
+article p {
+  color:#000;
+}
+#wrap {
+  min-height: 100%;
+}
+
+@media (min-width: 992px) {
+
+/*animation*/
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(66px);
+    transform: translateY(66px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(66px);
+    -ms-transform: translateY(66px);
+    transform: translateY(66px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* back to top */
+#back2Top {
+  display: inline-block;
+  background-color: #08c;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 75px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#back2Top:hover {
+  cursor: pointer;
+  opacity: 1 !important;
+}
+#back2Top:active {
+  background-color: #555;
+}
+#back2Top.show {
+  opacity: 0.5;
+  visibility: visible;
+}
+#back2Top span {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+  margin-left: 3px;
+}
+/* end back2top */
+
+/* bread */
+.breadcrumb {
+  padding: 8px 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  background-color: transparent;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+/* end bread */
+
+/* nav */
+.navbar-brand, .btn-primary, .btn-primary:active, .btn-primary:visited {
+  background-color: #168a16 !important;
+  color: #fff !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  border-color: #137713 !important;
+}
+
+.navbar-brand:hover, .btn-primary:hover {
+  background-color: #137713 !important;
+}
+}

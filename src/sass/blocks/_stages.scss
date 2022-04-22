@@ -1,0 +1,31 @@
+.stages {
+    min-height: 400px;
+    padding: 75px 0 75px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 41px;
+        color: #2D2D2D;
+        margin-bottom: 93px;
+    }
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background: $style-color;
+        border-radius: 50%;
+        font-weight: 400;
+        font-size: 15px;
+        color: #FFFF;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #181818;
+    }
+}

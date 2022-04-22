@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Экзамен по категории</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/quest.css" />
+</head>
+
+<body>
+    <!-- контейнер для контента -->
+    <div id="main" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <article>
+                    <div class="row">
+                        <div id="questTopButton" class="col-md-6">
+                            <div class="quest-start">Перезапустить тест</div>
+                        </div>
+                        <div id="timerBlock" class="col-md-6" style="text-align:right; float: right;">
+                            <span style="margin-right:10px; font-weight: 400; font-size: 22px;">Ваши время 25:00</span>
+                            <span style="margin-right:3px;"><svg xmlns="http://www.w3.org/2000/svg" width="19"
+                                    height="22">
+                                    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+                                        <path stroke="#000" stroke-linecap="square" d="M8.5 3.214V.49"></path>
+                                        <rect width="5.1" height="1" x="5.95" fill="#000" fill-rule="nonzero" rx=".5">
+                                        </rect>
+                                        <g fill="#000" fill-rule="nonzero">
+                                            <path
+                                                d="M16.321 7.92c-.896-2.138-2.419-3.693-4.526-4.612a8.194 8.194 0 0 0-3.309-.695 8.11 8.11 0 0 0-3.3.695c-2.09.917-3.619 2.47-4.517 4.611A8.63 8.63 0 0 0 0 11.295c0 1.179.22 2.312.67 3.385.897 2.141 2.427 3.704 4.516 4.621a8.11 8.11 0 0 0 3.3.694 8.196 8.196 0 0 0 3.309-.694c2.107-.92 3.63-2.483 4.526-4.62A8.674 8.674 0 0 0 17 11.294c0-1.18-.227-2.3-.679-3.376zm-1.356 7.216a7.545 7.545 0 0 1-2.733 2.786 7.195 7.195 0 0 1-3.746 1.027c-1.013 0-1.98-.2-2.9-.608a7.591 7.591 0 0 1-2.38-1.626c-.664-.68-1.193-1.5-1.589-2.444a7.635 7.635 0 0 1-.585-2.976c0-1.379.331-2.655.995-3.823A7.55 7.55 0 0 1 4.75 4.686 7.14 7.14 0 0 1 8.486 3.66c1.348 0 2.601.345 3.746 1.027a7.568 7.568 0 0 1 2.732 2.786 7.564 7.564 0 0 1 1.004 3.823 7.637 7.637 0 0 1-1.003 3.841z">
+                                            </path>
+                                            <path
+                                                d="M9.025 11.219V6.293a.542.542 0 0 0-.539-.532.53.53 0 0 0-.511.532v5.002c0 .01.018.047.018.076a.504.504 0 0 0 .14.428l2.78 2.843a.52.52 0 0 0 .715 0 .521.521 0 0 0 0-.742l-2.603-2.68z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg></span>
+                            <span id="timer" style="font-size: 24px;">--:--</span>
+                        </div>
+                    </div>
+                    <div id="questMainBlock" class="row">
+                        <div class="col-md-12">
+                            <div class="quest-module">
+                                <div class="quest-top row">
+                                    <div class="col-md-12">
+                                        <p class="quest-number" id="questLabel"></p>
+                                        <div id="questImage" class="quest-image"></div>
+                                        <p id="questTitle" class="quest-text"></p>
+                                    </div>
+                                </div>
+                                <div class="quest-answers">
+                                    <p class="answer-title">Выберите один ответ!</p>
+                                    <div id="questAnswers">
+                                    </div>
+                                </div>
+                                <div id="questButton" class="row">
+                                    <div id="questPrev" class="col-md-6">
+                                        <div class="quest-prev">Предыдущее</div>
+                                    </div>
+                                    <div id="questNext" class="col-md-6">
+                                        <div class="quest-next">Следующее</div>
+                                    </div>
+                                </div>
+                                <div id="questProgress" class="progress">
+                                    <div id="progressCorrect" class="progress-bar progress-bar-success"
+                                        role="progressbar"> </div>
+                                    <div id="progressWrong" class="progress-bar progress-bar-danger" role="progressbar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="questEnd" class="quest-end row">
+                        <div class="col-md-12">
+                            <div class="quest-module">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2>Результаты</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p id="questEndTextMark" class="quest-text-mark"></p>
+                                        <canvas id="myChart" class="quest-chart"></canvas>
+                                        <p id="questEndMaxMark" class="quest-martk"></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2>Пересмотрите свои ответы</h2>
+                                        <p>Не забудьте посмотреть свои ответы, чтобы узнать, где вам нужно подтянуть
+                                            свои знания.</p>
+                                        <p>Нажимайте на вопрос, чтобы посмотреть ваш ответ.</p>
+                                        <div id="questList" class="quest-list">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- подключаемые скрипты -->
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/vendor/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/bootstrap-5/js/bootstrap.min.js"></script>
+    <script src="assets/js/utils.js"></script>
+
+    <script>
+        var LANG = "ru";
+        var JSON_PATH = "10.json",
+            TEST_NAME = "",
+            IMAGES_PATH = "",
+            TYPE_TEST = "";
+
+        if (JSON_PATH.includes("$")) {
+            JSON_PATH = JSON_PATH.replace("$", ~~(Math.random() * 50));
+            TYPE_TEST = 'exam';
+        } else TYPE_TEST = 'theme';
+    </script>
+    <script src="assets/js/quest-test.js"></script>
+    <script src="assets/vendor/chartJS/Chart.min.js"></script>
+</body>
+</html>

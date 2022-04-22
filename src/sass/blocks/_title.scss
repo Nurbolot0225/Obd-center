@@ -1,0 +1,18 @@
+.title {
+    height: 360px;
+    padding: 60px 0 70px 0;
+    &__text {
+        width: 750px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 43px;
+        color: #2D2D2D;
+        margin-bottom: 16px;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #181818;
+    }
+}

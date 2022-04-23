@@ -1,6 +1,8 @@
 .avto {
-    height: 700px;
-    padding: 70px 0 80px 0;
+    padding: 70px 0 30px 0;
+    &__wrapper {
+        margin-top: 30px;
+    }
     &__header {
         font-weight: 400;
         font-size: 16px;
@@ -11,7 +13,8 @@
         }
     }
     &__title {
-        font-weight: 700;
+        font-family: "Roboto Bold";
+        font-weight: 900;
         font-size: 40px;
         line-height: 47px;
         color: #222222;
@@ -29,33 +32,4 @@
             text-indent: 20px;
         }
     }
-    &__btn {
-        display: inline-block;
-        background: #FF941F;
-        width: 213px;
-        height: 60px;
-        border-radius: 16px;
-        padding: 18px 60px;
-        font-weight: 700;
-        font-size: 16px;
-        text-align: center;
-        color: #FFFFFF;
-        animation: radial-pulse 1.8s infinite;
-        transition: all .5s;
-        &:hover {
-            animation: none;
-            background: #E5E5E5;
-            color: #FF941F;
-            box-shadow: inset 0 0 0 3px #FF941F;
-        }
-    }
 }
-
-@keyframes radial-pulse {
-    0% {
-        box-shadow: 0 0 10px 0px tomato, 0 0 10px 0px tomato; 
-      }
-      100% {
-        box-shadow: 0 0 18px 6px rgba(255, 48, 26, 0), 0 0 4px 50px rgba(255, 48, 26, 0);
-      }
-  }

@@ -1,0 +1,28 @@
+.btn__show__pulse {
+    display: inline-block;
+    background: #FF941F;
+    border: 5px solid #FF941F;
+    border-radius: 16px;
+    padding: 14px 60px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    animation: radial-pulse 2.5s infinite;
+    transition: all .5s;
+    &:hover {
+        background: transparent;
+        color: #FF941F;
+        box-shadow: inset 0 0 0 3px #FF941F;
+    }
+}
+
+
+@keyframes radial-pulse {
+0% {
+    box-shadow: 0 0 0 0px rgba(255, 148, 31, 1);
+}
+100% {
+    box-shadow: 0 0 10px 40px rgba(255, 255, 255, 1);
+}
+}

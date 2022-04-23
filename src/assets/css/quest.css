@@ -56,7 +56,7 @@
     width: 20px;
     height: 20px;
     left: 20px;
-    top: 50%;
+    top: 26px;
     margin-top: -10px;
     border-radius: 50%;
     border: 3px solid #00a0e3;
@@ -85,8 +85,9 @@
 
 .answer-text {    
     font-size: 18px;
+    text-indent: 40px;
     color: #222;
-    padding: 11px 38px 11px 55px;   
+    padding: 13px 10px;   
 	position: relative	
 }
 
@@ -344,8 +345,21 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     .answer-text {
+        font-size: 18px;
+    }
+    .quest-module {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 10px !important;
+        border: 3px solid #FF941F;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        background: #fff;
+    }
+    .quest-text {
         font-size: 18px;
     }
 }

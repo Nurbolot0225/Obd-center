@@ -18,5 +18,8 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.11"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gulp-file-include": "^2.3.0"
+  }
 }

@@ -8,22 +8,30 @@
   font-family: 'Roboto Regular', sans-serif;
 }
 
-.body {
-  background: #E5E5E5;
-}
 a {
-  text-decoration: none;
-  &:hover {
     text-decoration: none;
-  }
+    &:hover {
+        text-decoration: none;
+    }
 }
+
 hr, p {
-  margin: 0;
+    margin: 0;
 }
+
 .container {
-  max-width: 990px;
-  margin: 0 auto;
+    max-width: 990px;
+    margin: 0 auto;
 }
+
+.section__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 39px;
+    color: #2D2D2D;
+    margin-bottom: 25px;
+}
+
 
 @import 'blocks/banner';
 @import 'blocks/promo';
@@ -42,3 +50,4 @@ hr, p {
 @import 'blocks/pageup';
 @import 'blocks/content';
 @import 'blocks/media';
+@import 'blocks/btn';

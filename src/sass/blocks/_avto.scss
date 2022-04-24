@@ -6,7 +6,7 @@
     &__header {
         font-weight: 400;
         font-size: 16px;
-        color: #222222;
+        color: $text-color;
         margin-bottom: 88px;
         span {
             color: #C4C4C4;
@@ -17,7 +17,7 @@
         font-weight: 900;
         font-size: 40px;
         line-height: 47px;
-        color: #222222;
+        color: $text-color;
         margin-bottom: 24px;
     }
     &__descr {
@@ -25,7 +25,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 25px;
-        color: #222222;
+        color: $text-color;
         margin-bottom: 56px;
         span {
             display: inline-block;

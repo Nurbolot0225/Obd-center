@@ -1,9 +1,6 @@
 .banner {
     background-color: $main-color;
-    &__bg {
-        padding: 7px 0;
-        background-color: #e8b57a;
-    }
+    padding: 7px 0;
     &__inst {
         display: inline-block;
         border-right: 2px solid #fff;

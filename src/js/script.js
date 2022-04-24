@@ -5,28 +5,28 @@ $(document).ready(function() {
     })
 });
 
-// Fags
-let faqs__item = function () {
+// Faq
+let faq__item = function () {
     let data = $(".faqs__item").attr("data-faqs");
 
-    $(".faqs__open").on("click", function() {
+    $(".faq__link").on("click", function() {
         if (data === "close"){
-            $(".faqs__completed").slideUp();
+            $(".faq__descr").slideUp();
             if ($(this).hasClass("active")){
             $(this).toggleClass("active");
         }
         else{
-            $(".faqs__open").removeClass("active");
+            $(".faq__link").removeClass("active");
             $(this).toggleClass("active")
         }
         }
         else {
             $(this).toggleClass("active");
         }
-        $(this).next(".faqs__completed").not(":animated").slideToggle();
+        $(this).next(".faq__descr").not(":animated").slideToggle();
     });
 }
-faqs__item();
+faq__item();
 
 $(document).ready(function(){
 	$('.menu a').click(function(e){

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
@@ -78,7 +79,7 @@
     <section class="avto" id="avtokg">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-md-12 col-lg-6 col-sm-12">
+                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
                     <div class="avto__wrapper">
                         <h1 class="section__title">Бишкекская автошкола ОсОО ОБД-Центр</h1>
                         <p class="avto__descr">Разположен в центре города Бишкек, по адресу пр. Чуй-215, (Пересекает Т.Молдо) «Автошкола» ведет свою деятельность с 2005 года
@@ -87,7 +88,7 @@
                         <a href="#application" class="avto__btn btn__show__pulse">Записаться</a>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-12 col-lg-6">
+                <div class="col-xl-6 col-md-6 col-lg-6">
                     <img src="img/driving.webp" width="550" alt="img">
                 </div>
             </div>
@@ -232,6 +233,19 @@
             </div>
         </div>
     </section>
+    <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Ссылка с href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Кнопка с data-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+        </div>
+      </div>
 
     <section class="faqs" id="faq">
         <div class="container">
@@ -239,7 +253,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <h2 class="faqs__title">Часто задаваемые вопросы:</h2>
                 </div>
-                <div class="col-xl-6 col-lg-offset-3 col-md-6">
+                <div class="col-xl-6 col-md-6-offset-3">
                     <div class="faqs__item" data-faqs="open">
                         <div class="faqs__open">С какого возраста можно начать обучение?<i class="fal fa-angle-down"></i></div>
                         <p class="faqs__completed">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
@@ -281,7 +295,7 @@
 
     <footer class="footer" id="footer">
         <div class="container">
-            <div class="row">
+            <div class="row footer__info">
                 <div class="col-xl-4 col-md-4">
                     <h1 class="footer__title">ОБД - Центр</h1>
                     <a class="footer__link" href="#">
@@ -300,13 +314,13 @@
                     <a class="footer__phone footer__mb" href="tel:996707228818">+996 707 22 88 18</a>
                     <a class="footer__phone" href="tel:996777712890">+996 777 71 28 90</a>
                 </div>
-                <div class="col-md-12">
-                    <hr class="footer__line">
-                    <p class="footer__proverbs">
-                        © 2022 Автошкола «ОБД-Центр» Все права защищены
-                    </p>
-                </div>
             </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__proverbs">
+                © 2022 Автошкола «ОБД-Центр»
+                Все права защищены
+            </p>
         </div>
     </footer>
 
@@ -318,6 +332,7 @@
     <!-- connections Script -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>

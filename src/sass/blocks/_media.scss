@@ -75,18 +75,22 @@
         }
     }
     .avto {
-        height: 480px;
+        height: 550px;
         padding: 50px 0;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
         &__header {
             margin-bottom: 40px;
         }
         img {
-            display: none;
+            width: 380px;
         }
         &__btn {
             display: block;
-            margin: 0 auto;
-            width: 250px;
+            width: 200px;
+            text-align: center;
         }
         &__title {
             font-size: 36px;

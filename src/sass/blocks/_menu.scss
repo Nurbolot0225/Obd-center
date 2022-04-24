@@ -1,10 +1,9 @@
 .menu {
-    height: 90px;
     padding: 20px 0;
     &__nav {
         display: flex;
-        padding-top: 9px;
-        padding-left: 0;
+        padding: 8px 0;
+        margin-bottom: 0;
     }
     &__item {
         list-style-type: none;

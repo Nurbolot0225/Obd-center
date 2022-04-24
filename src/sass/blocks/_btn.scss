@@ -1,4 +1,43 @@
-.btn__show__pulse {
+.button__link {
+    display: inline-block;
+    background: $main-color;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 16px 40px;
+    transition: all .5s; 
+    &-discount {
+        padding: 16px 60px;
+        border: none;
+    } 
+    &-price {
+        padding: 16px 50px;
+    }
+    &:hover {
+        background: transparent;
+        color: #FF941F;
+        box-shadow: inset 0 0 0 3px #FF941F;
+    }
+}
+
+.button__form {
+    font-weight: 700;
+    font-size: 16px;
+    background: #FFFFFF;
+    border: none;
+    padding: 16px 60px;
+    border-radius: 16px;
+    color: $style-color;
+    transition: all .5s;
+    &:hover {
+        background: #fff;
+        color: #FF941F;
+        box-shadow: inset 0 0 0 3px #FF941F;
+    }
+}
+
+.btn-show-pulse {
     display: inline-block;
     background: #FF941F;
     border: 5px solid #FF941F;
@@ -16,7 +55,6 @@
         box-shadow: inset 0 0 0 3px #FF941F;
     }
 }
-
 
 @keyframes radial-pulse {
 0% {

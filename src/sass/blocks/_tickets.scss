@@ -1,0 +1,48 @@
+.tickets {
+    padding: 30px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__nav {
+        font-size: 22px;
+        text-align: center;
+        & .nav-item {
+            margin: auto;
+            width: 50%;
+            & .nav-link {
+                display: block;
+                width: 100%;
+                color: $style-color;
+                &:hover {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+            & .active {
+                background-color: $main-color;
+                color: #fff;
+            }
+        }
+    }
+    &__all {
+        padding: 30px 0;
+        text-align: center;
+    }
+    &__ticket {
+        & a {
+            font-size: 20px;
+            color: $style-color;
+            display: inline-block;
+            margin: 5px;
+            padding: 15px;
+            border: 2px solid $main-color;
+            border-radius: 10px;
+            &:hover {
+                background-color: $main-color;
+                cursor: pointer;
+                color: #fff;
+            }
+        }
+    }
+}

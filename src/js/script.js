@@ -29,7 +29,7 @@ let faq__item = function () {
 faq__item();
 
 $(document).ready(function(){
-	$('.menu a').click(function(e){
+	$('.header a').click(function(e){
     	if($(this).attr('href').indexOf('#') != -1){ // Проверяем, является и ссылка действительно якорной ссылкой.
 			e.preventDefault(); // Отменяем событие перехода.
             var href = $(this).attr('href').replace('#', ''); // Получаем из якорной ссылки нужный ID элемента, к которому будет происходить переход.
@@ -57,7 +57,7 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function(){
-    $("a[href*=#up]").on("click", function(e){
+    $("a[href*=#header]").on("click", function(e){
       var anchor = $(this);
       $('html, body').stop().animate({
         scrollTop: $(anchor.attr('href')).offset().top
@@ -66,3 +66,16 @@ $(document).ready(function(){
       return false;
     });
 });
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("header");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("header__sticky")
+  } else {
+    navbar.classList.remove("header__sticky");
+  }
+}

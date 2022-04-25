@@ -26,9 +26,9 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            transition: all 950ms ease;
+            transition: all 980ms ease;
             &:hover {
-                background-color: $style-color;
+                background-color: $main-color;
                 color: #fff;
             }
         }

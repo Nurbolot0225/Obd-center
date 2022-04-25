@@ -15,39 +15,35 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <!-- START MAIN -->
-<body class="body">
-
+<body>
     <div class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-mb-3">
-                    <a class="banner__inst" href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="banner__what" href="#">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
+                    <a class="banner__inst" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="banner__what" href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
                 <div class="col-4 col-mb-6">
                     <p class="banner__time">пн-пт 09:00 18:00, сб-вс 10:00 18:00</p>
                 </div>
                 <div class="col-4 col-mb-3">
-                    <p class="banner__price"><span>г.</span> Бишкек</p>
+                    <p class="banner__price">г.Бишкек</p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="promo">
         <div class="container">
-            <div class="row">
+            <div class="row promo__border-bottom">
                 <div class="col-3">
-                    <a class="promo__logo" href="#"><img src="" alt="logo" width="50"></a>
+                    <a class="promo__logo" href="#"><img src="img/logo.png" alt="logo" width="65"></a>
                 </div>
                 <div class="col-3">
                     <a class="promo__phone" href="tel:996707228818">+996 707 22 88 18</a>
                 </div>
                 <div class="col-3">
-                    <a class="promo__button" href="tel:996707228818">Заказать звонок</a>
+                    <a class="button__link" href="tel:996707228818">Заказать звонок</a>
                 </div>
                 <div class="col-3">
                     <p class="promo__street"><i class="fas fa-map-marker-alt"></i>ул, Чуй-215</p>
@@ -55,7 +51,7 @@
             </div>
         </div>
     </div>
-    <hr>
+
     <header class="menu" id="up">
         <nav>
             <div class="container">
@@ -79,16 +75,14 @@
     <section class="avto" id="avtokg">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-md-6 col-lg-6 col-sm-12">
-                    <div class="avto__wrapper">
-                        <h1 class="section__title">Бишкекская автошкола ОсОО ОБД-Центр</h1>
-                        <p class="avto__descr">Разположен в центре города Бишкек, по адресу пр. Чуй-215, (Пересекает Т.Молдо) «Автошкола» ведет свою деятельность с 2005 года
-                            <span>Автошкола лицензированное учереждение, обучающее профессиональному и безопасному вождению на дорогах. В автошколе ОсОО «ОБД-Центр» опытные преподаватели и инструктора по воддению автомрбилю с многолетним опытом, цены на подготовки водителей приемлемые</span>
-                        </p>
-                        <a href="#application" class="avto__btn btn__show__pulse">Записаться</a>
-                    </div>
+                <div class="col-xl-6 col-lg-12">
+                    <h1 class="section-title">Бишкекская автошкола ОсОО ОБД-Центр</h1>
+                    <p class="avto__descr">Разположен в центре города Бишкек, по адресу пр. Чуй-215, (Пересекает Т.Молдо) «Автошкола» ведет свою деятельность с 2005 года
+                        <span>Автошкола лицензированное учереждение, обучающее профессиональному и безопасному вождению на дорогах. В автошколе ОсОО «ОБД-Центр» опытные преподаватели и инструктора по воддению автомрбилю с многолетним опытом, цены на подготовки водителей приемлемые</span>
+                    </p>
+                    <a href="#application" class="btn-show-pulse">Записаться</a>
                 </div>
-                <div class="col-xl-6 col-md-6 col-lg-6">
+                <div class="col-xl-6 col-lg-12">
                     <img src="img/driving.webp" width="550" alt="img">
                 </div>
             </div>
@@ -100,47 +94,34 @@
             <div class="row">
                 <div class="col-12 col-lg-12">
                     <p class="discount__descr">Скидка  1 000 сом</p>
-                    <h2 class="section__title">Запишись прямо сейчас и получи скидку на обучение</h2>
+                    <h2 class="discount__title">Запишись прямо сейчас и получи скидку на обучение</h2>
                 </div>
                 <div class="col-12 col-md-12 col-md-offset-6">
                     <form class="discount__form" id="discount__query-form" action="#">
                         <input  name="name" required placeholder="Ваше имя" type="text">
                         <input name="phone" required placeholder="Ваш номер телефона">
-                        <button class="discount__submit" type="submit">Записаться</button>
+                        <button class="button__link button__link-discount" type="submit">Записаться</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="title">
+    
+    <section class="conditions">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="section__title">Чтобы начать обучение, нет необходимости ждать набора группы, занятия начнутся в день заключения договора!</h1>
-                    <p class="title__descr">Записаться и начать обучение можно не выходя из дома:</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container">
-        <hr>
-    </div>
-
-    <section class="description">
-        <div class="container">
-            <div class="row">
+                <h1 class="section-title">Благоприятные условия для  обучения в нашей Автошколе</h1>
                 <div class="col-xl-6 col-md-12">
-                    <li class="description__text">Автошкола предоставлять дополнительные часы на практичесие навыки вождения для лиц, желающих еще более усовершенствовать свои навыки вождения</li>
-                    <li class="description__text">Оплата за обучение возможна произвести по частям</li>
-                    <li class="description__text">Теоретические занятия утром и вечером</li>
-                    <li class="description__text">Практические занятия по вождению с 09.00 до 18.00</li>
+                    <li class="conditions__text">Автошкола предоставлять дополнительные часы на практичесие навыки вождения для лиц, желающих еще более усовершенствовать свои навыки вождения</li>
+                    <li class="conditions__text">Оплата за обучение возможна произвести по частям</li>
+                    <li class="conditions__text">Теоретические занятия утром и вечером</li>
+                    <li class="conditions__text">Практические занятия по вождению с 09.00 до 18.00</li>
                 </div>
                 <div class="col-xl-6 col-md-12">
-                    <li class="description__text">С понедельника по субботу, график и времия вождения вы сами выбираете в удобное время, и инструкторов тоже</li>
-                    <li class="description__text">Категория «В» срок обучения 2,5 месяц</li>
-                    <li class="description__text">Категория «ВС» срок обучения 3,5 месяц</li>
+                    <li class="conditions__text">С понедельника по субботу, график и времия вождения вы сами выбираете в удобное время, и инструкторов тоже</li>
+                    <li class="conditions__text">Категория «В» срок обучения 2,5 месяц</li>
+                    <li class="conditions__text">Категория «ВС» срок обучения 3,5 месяц</li>
+                    <li class="conditions__text">Рассрочка до конца обучения</li>
                 </div>
             </div>
         </div>
@@ -150,7 +131,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="section__title">Этапы прохождения обучения</h2>
+                    <h2 class="section-title">Этапы прохождения обучения</h2>
                 </div>
                 <div class="col-xl-3 col-lg-6">
                     <p class="stages__number">1</p>
@@ -183,7 +164,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="section__title">Стоимость обучения</h2>
+                    <h2 class="section-title">Стоимость обучения</h2>
                 </div>
                 <div class="col-xl-6 col-md-12">
                     <div class="price__bg">
@@ -196,7 +177,7 @@
                         <li class="price__descr">Стандартный курс вождения в удобное для Вас время</li>
                         <li class="price__descr">Бензин и учебная литература</li>
                         <li class="price__descr">Оформление документов  для ГРС</li>
-                        <a class="price__button" href="#application">Записаться</a>
+                        <a class="button__link button__link-price" href="#application">Записаться</a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-12">
@@ -210,7 +191,7 @@
                         <li class="price__descr">Стандартный курс вождения в удобное для Вас время</li>
                         <li class="price__descr">Бензин и учебная литература</li>
                         <li class="price__descr">Оформление документов  для ГРС</p></li>
-                        <a class="price__button" href="#application">Записаться</a>
+                        <a class="button__link button__link-price" href="#application">Записаться</a>
                     </div>
                 </div>
             </div>
@@ -227,42 +208,48 @@
                     <form class="discount__form form__blue" id="query-form" action="#">
                         <input name="name" required placeholder="Ваше имя" type="text">
                         <input name="phone" required placeholder="Ваш номер телефона">
-                        <button class="discount__submit form__bittonblue" type="submit">Записаться</button>
+                        <button class="button__form" type="submit">Записаться</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faqs" id="faq">
+    <section class="faq" id="faqs">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <h2 class="faqs__title">Часто задаваемые вопросы:</h2>
-                </div>
-                <div class="col-xl-6 col-md-6-offset-3">
-                    <div class="faqs__item" data-faqs="open">
-                        <div class="faqs__open">С какого возраста можно начать обучение?<i class="fal fa-angle-down"></i></div>
-                        <p class="faqs__completed">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
-                    </div>
-                    <div class="faqs__item">
-                        <p class="faqs__open">Если в ходе изучения теории возник вопрос?<i class="fal fa-angle-down"></i></p>
-                        <p class="faqs__completed">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
-                    </div>
-                    <div class="faqs__item">
-                        <p class="faqs__open">Какие документы необходимы?<i class="fal fa-angle-down"></i></p>
-                        <p class="faqs__completed">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
-                    </div>
-                    <div class="faqs__item">
-                        <p class="faqs__open">Можно ли приостановить обучение?<i class="fal fa-angle-down"></i></p>
-                        <p class="faqs__completed">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
-                    </div>
-                    <div class="faqs__item">
-                        <p class="faqs__open">Когда начинается вождение?<i class="fal fa-angle-down"></i></p>
-                        <p class="faqs__completed">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
-                    </div>
-                </div>
-            </div>
+           <h2 class="section-title">Часто задаваемые вопросы:</h2>
+            <ul class="faq__list">
+                <li class="faq__item" data-faqs="open">
+                    <i class="fas fa-question-circle"></i>
+                    <a href="#" class="faq__link">С какого возраста можно начать обучение ?<i class="far fa-angle-down"></i></a>
+                    <p class="faq__descr">Начать обучение можно на В-с 17 лет, на ВС - с 18 лет</p>
+                </li>
+                <li class="faq__item">
+                    <i class="fas fa-question-circle"></i>
+                    <a href="#" class="faq__link">Если в ходе изучения теории возник вопрос ?<i class="far fa-angle-down"></i></a>
+                    <p class="faq__descr">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
+                </li>
+                <li class="faq__item">
+                    <i class="fas fa-question-circle"></i>
+                    <a href="#" class="faq__link">Можно ли приостановить обучение ?<i class="far fa-angle-down"></i></a>
+                    <p class="faq__descr">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
+                </li>
+                <li class="faq__item">
+                    <i class="fas fa-question-circle"></i>
+                    <a href="#" class="faq__link">Какие документы необходимы ?<i class="far fa-angle-down"></i></a>
+                    <p class="faq__descr">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
+                </li>
+                <li class="faq__item">
+                    <i class="fas fa-question-circle"></i>
+                    <a href="#" class="faq__link">Можно ли сократить или увеличить срок обучения ?<i class="far fa-angle-down"></i></a>
+                    <p class="faq__descr">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
+                </li>
+                <li class="faq__item">
+                    <i class="fas fa-question-circle"></i>
+                    <a href="#" class="faq__link">Когда начинается вождение ?<i class="far fa-angle-down"></i></a>
+                    <p class="faq__descr">Начать обучение можно с 16 лет, сдать экзамены в 17 лет, в 18 лет получить права.</p>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -273,7 +260,7 @@
                         <h2 class="map__title">География присутствия</h2>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8152596253512!2d74.59338221541131!3d42.876743279155654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dfb7209fa9%3A0xb5d910a040be5055!2z0J7RgdCe0J4gItCe0JHQlCDQptC10L3RgtGAIiAo0JDQstGC0L7RiNC60L7Qu9CwKQ!5e0!3m2!1sru!2skg!4v1649953978556!5m2!1sru!2skg" width="100%" height="450" style="border-radius: 16px; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="map__btn">
-                        <a href="#application" class="map__btnbig btn__show__pulse">Записаться на обучение</a>
+                        <a href="#application" class="button__link btn-show-pulse">Записаться на обучение</a>
                     </div>
                 </div>
             </div>
@@ -282,7 +269,7 @@
 
     <footer class="footer" id="footer">
         <div class="container">
-            <div class="row footer__info">
+            <div class="row">
                 <div class="col-xl-4 col-md-4">
                     <h1 class="footer__title">ОБД - Центр</h1>
                     <a class="footer__link" href="#">

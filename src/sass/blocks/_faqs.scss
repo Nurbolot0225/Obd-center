@@ -1,40 +1,41 @@
-.faqs {
-    min-height: 450px;
-    padding: 80px 0 80px 0;
-    &__title {
-        font-weight: 700;
-        font-size: 35px;
-        color: #2D2D2D;
+.faq {
+    padding: 25px 0;
+    &__list {
+        margin: 10px 0;
     }
-    &__open {
-        width: 450px;
-        margin: 10px 0 35px 0;
+    .fas {
+        color: $style-color;
+        font-size: 21px;
+    }
+    &__item {
         cursor: pointer;
-        font-weight: 600;
-        font-size: 18px;
-        color: #181818;
-        i {
-            float: right;
-            margin: 5px 5px;
-            font-size: 23px;
-            color: #181818;
-            transition: all 0.4s ease-in-out;
-            color: #181818;
+        margin: 12px 0;
+        padding: 20px;
+        list-style-type: none;
+        background-color: rgb(249, 245, 245);
+        height: 100%;
+        width: 100%;
+        &:hover {
+            color: $style-color;
         }
     }
-    &__completed {
+    &__link {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: $text-color;
+    }
+    &__descr {
         display: none;
-        width: 400px;
-        padding: 0 0 25px 0;
+        padding-top: 5px;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #181818;
+        color: $text-color;
     }
-}
-
-.active { 
-    i { 
-        transform: rotate(-180deg);
+    .far {
+        float: right;
+        font-size: 20px;
     }
 }

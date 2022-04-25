@@ -1,9 +1,6 @@
 .footer {
     padding: 50px 0 0 0;
     background-color: #fff;
-    &__info {
-        margin-bottom: 20px;
-    }
     &__title {
         font-size: 40px;
         font-weight: 500;
@@ -26,9 +23,9 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            transition: all 950ms ease;
+            transition: all 980ms ease;
             &:hover {
-                background-color: $style-color;
+                background-color: $main-color;
                 color: #fff;
             }
         }
@@ -43,7 +40,7 @@
         font-weight: 400;
         font-size: 17px;
         line-height: 24px;
-        color: #181818;
+        color: $text-color;
     }
     &__phone {
         display: block;
@@ -56,11 +53,12 @@
         }
     }
     &__mb {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     &__proverbs {
         background-color: $main-color;
         padding: 10px 0;
+        margin-bottom: 0;
         text-align: center;
         font-weight: 400;
         font-size: 17px;

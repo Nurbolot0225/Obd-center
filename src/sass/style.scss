@@ -15,32 +15,18 @@ a {
     }
 }
 
-hr, p {
-    margin: 0;
-}
-
 .container {
     max-width: 990px;
     margin: 0 auto;
 }
-
-.section__title {
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 39px;
-    color: #2D2D2D;
-    margin-bottom: 25px;
-}
-
 
 @import 'blocks/banner';
 @import 'blocks/promo';
 @import 'blocks/menu';
 @import 'blocks/avto';
 @import 'blocks/discount';
-@import 'blocks/title';
-@import 'blocks/driving';
-@import 'blocks/description';
+@import 'blocks/title';;
+@import 'blocks/conditions';
 @import 'blocks/stages';
 @import 'blocks/price';
 @import 'blocks/forms';

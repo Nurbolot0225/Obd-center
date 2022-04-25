@@ -25,13 +25,18 @@
         font-weight: 400;
         color: #fff;
     }
-    &__price {
+    &__address {
         padding-top: 5px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         display: flex;
         justify-content: flex-end;
         font-size: 17px;
         font-weight: 700;
         color: #fff;
+        & .fas {
+            margin-top: 13px;
+            margin-right: 8px;
+            line-height: 0;
+        }
     }
 }

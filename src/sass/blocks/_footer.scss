@@ -1,9 +1,6 @@
 .footer {
     padding: 50px 0 0 0;
     background-color: #fff;
-    &__info {
-        margin-bottom: 20px;
-    }
     &__title {
         font-size: 40px;
         font-weight: 500;
@@ -56,11 +53,12 @@
         }
     }
     &__mb {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     &__proverbs {
         background-color: $main-color;
         padding: 10px 0;
+        margin-bottom: 0;
         text-align: center;
         font-weight: 400;
         font-size: 17px;

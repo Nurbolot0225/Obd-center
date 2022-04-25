@@ -1,8 +1,9 @@
 .banner {
     background-color: $main-color;
-    padding: 7px 0;
+    padding: 6px 0 0 0;
     &__inst {
         display: inline-block;
+        margin-top: 2px;
         border-right: 2px solid #fff;
         padding: 3px 10px 0 0;
         i { 
@@ -19,21 +20,18 @@
         }
     }
     &__time {
-        padding-top: 3px;
+        padding-top: 5px;
         font-size: 17px;
         font-weight: 400;
         color: #fff;
     }
     &__price {
-        letter-spacing: 2px;
-        padding-top: 3px;
+        padding-top: 5px;
+        letter-spacing: 3px;
         display: flex;
         justify-content: flex-end;
         font-size: 17px;
         font-weight: 700;
         color: #fff;
-        span {
-            margin-right: 4px;
-        }
     }
 }

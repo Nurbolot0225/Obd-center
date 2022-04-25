@@ -1,29 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Экзамен по категории</title>
-
-    <link rel="stylesheet" href="assets/vendor/bootstrap-5/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/quest.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автошкола ОБД-Центр</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/question.css" />
 </head>
+<!-- START MAIN -->
+<body class="body">
 
-<body>
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-mb-3">
+                    <a class="banner__inst" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="banner__what" href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="col-4 col-mb-6">
+                    <p class="banner__time">пн-пт 09:00 18:00, сб-вс 10:00 18:00</p>
+                </div>
+                <div class="col-4 col-mb-3">
+                    <p class="banner__price"><span>г.</span> Бишкек</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <a class="promo__logo" href="#"><img src="img/logo.png" alt="logo" width="50"></a>
+                </div>
+                <div class="col-3">
+                    <a class="promo__phone" href="tel:996707228818">+996 707 22 88 18</a>
+                </div>
+                <div class="col-3">
+                    <a class="button__link" href="tel:996707228818">Заказать звонок</a>
+                </div>
+                <div class="col-3">
+                    <p class="promo__street"><i class="fas fa-map-marker-alt"></i>ул, Чуй-215</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <header class="menu" id="up">
+        <nav>
+            <div class="container">
+                <ul class="menu__nav">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#avtokg">О нас</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#category">Категория</a></li>
+                    <li class="menu__item"><a class="menu__link" href="tickets.html">Онлайн-тест</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#faq">FAQ's</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#footer">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
     <!-- контейнер для контента -->
     <div id="main" class="container">
         <div class="row">
             <div class="col-md-12">
                 <article>
                     <div class="row">
-                        <div id="questTopButton" class="col-md-6">
-                            <div class="quest-start">Перезапустить тест</div>
-                        </div>
                         <div id="timerBlock" class="col-md-6" style="text-align:right; float: right;">
-                            <span style="margin-right:10px; font-weight: 400; font-size: 22px;">Ваши время 25:00</span>
+                            <span style="margin-right:10px; font-weight: 400; font-size: 22px;">Ваши время 20:00</span>
                             <span style="margin-right:3px;"><svg xmlns="http://www.w3.org/2000/svg" width="19"
                                     height="22">
                                     <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
@@ -59,10 +120,10 @@
                                     </div>
                                 </div>
                                 <div id="questButton" class="row">
-                                    <div id="questPrev" class="col-md-6">
+                                    <div id="questPrev" class="col-6">
                                         <div class="quest-prev">Предыдущее</div>
                                     </div>
-                                    <div id="questNext" class="col-md-6">
+                                    <div id="questNext" class="col-6">
                                         <div class="quest-next">Следующее</div>
                                     </div>
                                 </div>
@@ -107,17 +168,57 @@
         </div>
     </div>
     </div>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row footer__info">
+                <div class="col-xl-4 col-md-4">
+                    <h1 class="footer__title">ОБД - Центр</h1>
+                    <a class="footer__link" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="footer__link" href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <h3 class="footer__contact">Наш адрес:</h3>
+                    <p class="footer__descr">г. Бишкек пр Чуй-215 Пересекает ул. Т.Молдо, в здани Горного Института, ориентир кинотеатр «Россия»</p>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <h3 class="footer__contact">Контактные телефоны:</h3>
+                    <a class="footer__phone footer__mb" href="tel:996707228818">+996 707 22 88 18</a>
+                    <a class="footer__phone" href="tel:996777712890">+996 777 71 28 90</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__proverbs">
+                © 2022 Автошкола «ОБД-Центр»
+                Все права защищены
+            </p>
+        </div>
+    </footer>
 
+    <a href="#up" class="pageup">
+        <i class="fas fa-chevron-circle-up"></i>
+    </a>
+    <!-- EBD MAIN -->
+
+    <!-- connections Script -->
+    <script src="plugins/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="plugins/jQuery/jquery-migrate-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
     <!-- подключаемые скрипты -->
-    <script src="assets/js/lang.js"></script>
-    <script src="assets/vendor/jQuery/jquery-3.3.1.min.js"></script>
-    <script src="assets/vendor/bootstrap-5/js/bootstrap.min.js"></script>
-    <script src="assets/js/utils.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/utils.js"></script>
 
     <script>
         var LANG = "ru";
         var JSON_PATH = "10.json",
-            TEST_NAME = "",
+            TEST_NAME = "sss",
             IMAGES_PATH = "",
             TYPE_TEST = "";
 
@@ -126,7 +227,7 @@
             TYPE_TEST = 'exam';
         } else TYPE_TEST = 'theme';
     </script>
-    <script src="assets/js/quest-test.js"></script>
-    <script src="assets/vendor/chartJS/Chart.min.js"></script>
+    <script src="js/quest-test.js"></script>
+    <script src="plugins/chartJS/Chart.min.js"></script>
 </body>
 </html>

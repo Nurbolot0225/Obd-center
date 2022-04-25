@@ -1,12 +1,5 @@
 .stages {
     padding: 30px 0;
-    &__title {
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 41px;
-        color: #2D2D2D;
-        margin-bottom: 93px;
-    }
     &__number {
         display: flex;
         justify-content: center;
@@ -20,6 +13,15 @@
         color: #FFFF;
         margin-bottom: 20px;
         margin-top: 20px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            border: 2px dashed #D8D8D8;
+            border-radius: 50%;
+        }
     }
     &__descr {
         font-weight: 400;

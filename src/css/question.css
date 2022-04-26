@@ -1,7 +1,9 @@
+.question {
+    padding: 50px 0;
+}
 .quest-name {
 	text-align: center;	
 }
-
 .quest-module {
 	margin-top: 20px;
     margin-bottom: 30px;

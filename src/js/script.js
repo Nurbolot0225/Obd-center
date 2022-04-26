@@ -1,33 +1,3 @@
-$(document).ready(function() {
-    $(".burger").click(function(event) {
-        $(".burger").toggleClass("burger-active");
-        $(".menu__nav").toggleClass("menu__nav-active");
-    })
-});
-
-// Faq
-let faq__item = function () {
-    let data = $(".faqs__item").attr("data-faqs");
-
-    $(".faq__link").on("click", function() {
-        if (data === "close"){
-            $(".faq__descr").slideUp();
-            if ($(this).hasClass("active")){
-            $(this).toggleClass("active");
-        }
-        else{
-            $(".faq__link").removeClass("active");
-            $(this).toggleClass("active")
-        }
-        }
-        else {
-            $(this).toggleClass("active");
-        }
-        $(this).next(".faq__descr").not(":animated").slideToggle();
-    });
-}
-faq__item();
-
 $(document).ready(function(){
 	$('.header a').click(function(e){
     	if($(this).attr('href').indexOf('#') != -1){ // Проверяем, является и ссылка действительно якорной ссылкой.

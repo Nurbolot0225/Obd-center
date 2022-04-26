@@ -1,21 +1,207 @@
 @media (max-width: 1200px) {
-    
+    .section-title {
+        font-size: 37px;
+        line-height: 46px;
+        margin-bottom: 20px;
+    }
+    .btn-show-pulse {
+        display: inline-block;
+        padding: 13px 50px;
+    }
+    .banner {
+        &__time {
+            font-size: 16px;
+        }
+        &__address {
+            font-size: 16px;
+        }
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 9px 14px;
+            }
+        }
+    }
+    .avto {
+        padding: 50px 0 0 0;
+        &__descr {
+            margin-bottom: 45px;
+        }
+        &__img {
+            img {
+                width: 480px;
+            }
+        }
+    }
+    .discount {
+        padding: 30px 15px;
+        &__bg {
+            padding: 50px 55px 55px 50px;
+        }
+    }
+    .conditions {
+        padding: 30px 15px;
+        li {
+            padding: 0 0 20px 5px;
+        }
+    }
+    .stages {
+        padding: 30px 15px;
+    }
+    .price {
+        &__bg  {
+            padding: 30px 50px 32px 50px;
+        }
+        &__category {
+            font-size: 25px;
+            margin-bottom: 13px;
+        }
+        &__old {
+            font-size: 19px;
+        }
+        &__summa {
+            font-size: 38px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .form {
+        padding: 5px 15px;
+        &__bg {
+            padding: 50px 40px 50px 50px;
+        }
+        &__title {
+            font-size: 35px;
+            margin-bottom: 60px;
+        }
+    }
+    .footer {
+        padding: 45px 0 0 0;
+        &__title {
+            font-size: 38px
+        }
+        &__link {
+            display: inline-block;
+            margin: 15px 0;
+            i { 
+                margin: 0 10px 0 0;
+                width: 45px;
+                height: 45px;
+                font-size: 33px;
+            }
+        }
+    }   
 }
 @media (max-width: 992px) {
     .section-title {
-        text-align: center;
-        font-size: 36px;
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 16px;
+    }
+    .btn-show-pulse {
+        display: inline-block;
+        padding: 10px 50px;
+    }
+    .banner {
+        &__time {
+            font-size: 16px;
+        }
+        &__address {
+            font-size: 16px;
+        }
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 9px 14px;
+            }
+        }
     }
     .avto {
-       &__btn {
-          text-align: center;
-       }
-       &__img {
-           margin-top: 15px;
-           text-align: center;
-       }
+        padding: 50px 0 0 0;
+        &__btn {
+            text-align: center;
+        }
+        &__descr {
+            margin-bottom: 45px;
+        }
+        &__img {
+            margin-top: 20px;
+            text-align: center;
+            img {
+                width: 500px;
+            }
+        }
     }
-    
+    .discount {
+        padding: 30px 15px;
+        &__bg {
+            padding: 50px 55px 55px 50px;
+        }
+    }
+    .conditions {
+        padding: 30px 15px;
+        li {
+            padding: 0 0 20px 5px;
+        }
+    }
+    .stages {
+        padding: 30px 15px;
+    }
+    .price {
+        &__bg  {
+            padding: 30px 50px 32px 50px;
+        }
+        &__category {
+            font-size: 25px;
+            margin-bottom: 13px;
+        }
+        &__old {
+            font-size: 19px;
+        }
+        &__summa {
+            font-size: 38px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .form {
+        padding: 5px 15px;
+        &__bg {
+            padding: 50px 40px 50px 50px;
+        }
+        &__title {
+            font-size: 35px;
+            margin-bottom: 60px;
+        }
+    }
+    .footer {
+        padding: 45px 0 0 0;
+        &__title {
+            font-size: 38px
+        }
+        &__link {
+            display: inline-block;
+            margin: 15px 0;
+            i { 
+                margin: 0 10px 0 0;
+                width: 45px;
+                height: 45px;
+                font-size: 33px;
+            }
+        }
+    } 
 }
 @media (max-width: 576px) {
     

@@ -1,41 +1,81 @@
 .faq {
     padding: 25px 0;
-    &__list {
-        margin: 10px 0;
+}
+// Layout
+.row {
+    display:flex;
+    .col {
+        flex: 1;
     }
-    .fas {
-        color: $style-color;
-        font-size: 21px;
+}
+/* Accordion styles */
+.tabs {
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+}
+.tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
     }
-    &__item {
-        cursor: pointer;
-        margin: 12px 0;
-        padding: 20px;
-        list-style-type: none;
-        background-color: rgb(249, 245, 245);
-        height: 100%;
-        width: 100%;
-        &:hover {
-            color: $style-color;
-        }
-    }
-    &__link {
-        font-style: normal;
+    &-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background-color: rgb(236, 232, 232);
+        opacity: 8;
         font-weight: 600;
         font-size: 18px;
         line-height: 24px;
         color: $text-color;
+        cursor: pointer;
+        transition: 100ms ease-in-out;
+        &:hover {
+            color: $style-color;
+        }
+        &::after {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all .35s;
+        }
     }
-    &__descr {
-        display: none;
-        padding-top: 5px;
+    &-content {
+        max-height: 0;
+        padding: 0 1em;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: $text-color;
+        transition: all .35s;
     }
-    .far {
-        float: right;
-        font-size: 20px;
+    // &-close {
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     padding: 1em;
+    //     font-size: 0.75em;
+    //     background: $main-color;
+    //     cursor: pointer;
+    //     &:hover {
+    //         background-color: $style-color;
+    //     }
+    // }
+    }
+    // :checked
+    input:checked {
+    + .tab-label {
+        background-color: rgb(236, 232, 232);
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+    ~ .tab-content {
+        max-height: 100vh;
+        padding: 1em;
     }
 }

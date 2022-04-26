@@ -1,17 +1,5 @@
 .price {
-    padding: 30px 0 30px 0;
-    &__title {
-        font-weight: 700;
-        font-size: 39px;
-        color: #2D2D2D;
-        margin-bottom: 10px;
-    }
-    &__subheader {
-        font-weight: 400;
-        font-size: 16px;
-        color: #181818;
-        margin-bottom: 30px;
-    }
+    padding: 30px 15px;
     &__bg {
         background: #FFFFFF;
         border-radius: 19px;
@@ -49,25 +37,10 @@
     }
     &__descr {
         list-style-type: disc;
-        margin: 30px 0 30px 0;
+        margin: 30px 0;
         font-weight: 400;
         font-size: 14px;
         line-height: 123.19%;
         color: #2D2D2D;
-    }
-    &__button {
-        display: inline-block;
-        background: $main-color;
-        border-radius: 16px;
-        font-size: 16px;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 20px 50px;
-        transition: all 500ms ease;
-        &:hover {
-            background: #fff;
-            color: #FF941F;
-            box-shadow: inset 0 0 0 3px #FF941F;
-        }
     }
 }

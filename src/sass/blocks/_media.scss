@@ -371,7 +371,8 @@
                 margin: 0 5px;
             }
             & .nav-item a {
-                padding: 8px 13px;
+                padding: 8px 10px;
+                font-size: 17px;
             }
         }
     }
@@ -466,6 +467,28 @@
         }
     } 
 }
+@media (max-width: 425px) {
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 8px 9px;
+                font-size: 16px;
+            }
+        }
+    }
+    .avto {
+        padding: 35px 0 0 0;
+        &__img {
+            img {
+                width: 350px;
+            }
+        }
+    }
+}
 @media (max-width: 375px) {
     .button__link {
         &-discount {
@@ -496,7 +519,7 @@
                 margin: 0 5px;
             }
             & .nav-item a {
-                padding: 8px 13px;
+                padding: 8px 9px;
             }
         }
     }
@@ -595,6 +618,10 @@
                 padding-bottom: 15px;
             }
         }
+        &__proverbs {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 }
 @media (max-width: 320px) {
@@ -629,7 +656,8 @@
                 margin: 0 5px;
             }
             & .nav-item a {
-                padding: 8px 13px;
+                padding: 8px 8px;
+                font-size: 16px;
             }
         }
     }
@@ -705,7 +733,7 @@
             margin-bottom: 0;
         }
         &__descr {
-            margin: 20px 0;
+            margin: 10px 0;
         }
     }
     .form {

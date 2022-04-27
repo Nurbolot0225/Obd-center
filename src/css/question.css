@@ -124,7 +124,7 @@
 .quest-start {
     padding-top: 2px;
 	float: left;
-    margin-right: 7px;
+    margin: 30px 0 0 0;
     padding-left: 7px;
     padding-right: 7px;
 
@@ -348,6 +348,16 @@
 }
 
 @media (max-width: 576px) {
+    .quest-start {
+        padding-top: 2px;
+        float: left;
+        margin: 20px 0 0 0;
+        padding-left: 7px;
+        padding-right: 7px;
+    
+        background-color: #168a16 !important;
+        border-color: #137713 !important
+    }
     .answer-text {
         font-size: 18px;
     }

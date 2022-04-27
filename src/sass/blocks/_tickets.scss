@@ -1,13 +1,17 @@
 .tickets {
     padding: 35px 0;
-    min-height: 560px;
     &__title {
         text-align: center;
         margin-bottom: 30px;
+        font-size: 27px;
+        line-height: 27px;
     }
     &__school {
         text-align: center;
         margin-bottom: 35px;
+        font-size: 35px;
+        font-weight: 600;
+        color: $text-color;
     }
     &__nav {
         font-size: 22px;
@@ -31,10 +35,9 @@
         }
     }
     &__all {
-        padding: 30px 0;
         text-align: center;
     }
-    &__ticket {
+    &__ticket { 
         & a {
             font-size: 20px;
             color: $style-color;
@@ -47,6 +50,365 @@
                 background-color: $main-color;
                 cursor: pointer;
                 color: #fff;
+            }
+        }
+    }
+}
+
+.tab-pane {
+    padding: 30px 0;
+}
+
+@media (max-width: 992px) {
+    .tickets {
+        &__title {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 26px;
+            line-height: 26px;
+        }
+        &__school {
+            text-align: center;
+            margin-bottom: 33px;
+            font-size: 34px;
+            font-weight: 600;
+            color: $text-color;
+        }
+        &__nav {
+            font-size: 22px;
+            text-align: center;
+            & .nav-item {
+                margin: auto;
+                width: 50%;
+                font-size: 20px;
+                & .nav-link {
+                    display: block;
+                    width: 100%;
+                    color: $style-color;
+                    &:hover {
+                        background-color: $main-color;
+                        color: #fff;
+                    }
+                }
+                & .active {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+        &__all {
+            text-align: center;
+        }
+        &__ticket { 
+            & a {
+                font-size: 19px;
+                color: $style-color;
+                display: inline-block;
+                margin: 4px;
+                padding: 13px;
+                border: 2px solid $main-color;
+                border-radius: 10px;
+                &:hover {
+                    background-color: $main-color;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tickets {
+        &__title {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 25px;
+            line-height: 25px;
+        }
+        &__school {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 33px;
+            font-weight: 600;
+            color: $text-color;
+        }
+        &__nav {
+            font-size: 20px;
+            text-align: center;
+            & .nav-item {
+                margin: auto;
+                width: 50%;
+                font-size: 20px;
+                & .nav-link {
+                    display: block;
+                    width: 100%;
+                    color: $style-color;
+                    &:hover {
+                        background-color: $main-color;
+                        color: #fff;
+                    }
+                }
+                & .active {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+        &__all {
+            text-align: center;
+        }
+        &__ticket { 
+            & a {
+                font-size: 18px;
+                color: $style-color;
+                display: inline-block;
+                margin: 4px;
+                padding: 12px;
+                border: 2px solid $main-color;
+                border-radius: 10px;
+                &:hover {
+                    background-color: $main-color;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .tickets {
+        &__title {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+            line-height: 25px;
+        }
+        &__school {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 32px;
+            font-weight: 600;
+            color: $text-color;
+        }
+        &__nav {
+            font-size: 20px;
+            text-align: center;
+            & .nav-item {
+                margin: auto;
+                width: 50%;
+                font-size: 20px;
+                & .nav-link {
+                    display: block;
+                    width: 100%;
+                    color: $style-color;
+                    &:hover {
+                        background-color: $main-color;
+                        color: #fff;
+                    }
+                }
+                & .active {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+        &__all {
+            text-align: center;
+        }
+        &__ticket { 
+            & a {
+                font-size: 17px;
+                color: $style-color;
+                display: inline-block;
+                margin: 4px;
+                padding: 12px;
+                border: 2px solid $main-color;
+                border-radius: 10px;
+                &:hover {
+                    background-color: $main-color;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .tickets {
+        padding: 20px 0;
+        &__title {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 23px;
+            line-height: 25px;
+        }
+        &__school {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 30px;
+            font-weight: 600;
+            color: $text-color;
+        }
+        &__nav {
+            font-size: 18px;
+            text-align: center;
+            & .nav-item {
+                margin: auto;
+                width: 50%;
+                font-size: 18px;
+                & .nav-link {
+                    display: block;
+                    width: 100%;
+                    color: $style-color;
+                    &:hover {
+                        background-color: $main-color;
+                        color: #fff;
+                    }
+                }
+                & .active {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+        &__all {
+            text-align: center;
+        }
+        &__ticket { 
+            & a {
+                font-size: 16px;
+                color: $style-color;
+                display: inline-block;
+                margin: 3px;
+                padding: 11px;
+                border: 2px solid $main-color;
+                border-radius: 10px;
+                &:hover {
+                    background-color: $main-color;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .tickets {
+        &__title {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 21px;
+            line-height: 24px;
+        }
+        &__school {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 29px;
+            font-weight: 600;
+            color: $text-color;
+        }
+        &__nav {
+            font-size: 17px;
+            text-align: center;
+            & .nav-item {
+                margin: auto;
+                width: 50%;
+                font-size: 17px;
+                & .nav-link {
+                    display: block;
+                    width: 100%;
+                    color: $style-color;
+                    &:hover {
+                        background-color: $main-color;
+                        color: #fff;
+                    }
+                }
+                & .active {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+        &__all {
+            text-align: center;
+        }
+        &__ticket { 
+            & a {
+                font-size: 16px;
+                color: $style-color;
+                display: inline-block;
+                margin: 3px;
+                padding: 10px;
+                border: 2px solid $main-color;
+                border-radius: 10px;
+                &:hover {
+                    background-color: $main-color;
+                    cursor: pointer;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .tickets {
+        &__title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__school {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 23px;
+            font-weight: 600;
+            color: $text-color;
+        }
+        &__nav {
+            font-size: 16px;
+            text-align: center;
+            & .nav-item {
+                margin: auto;
+                width: 50%;
+                font-size: 16px;
+                & .nav-link {
+                    display: block;
+                    width: 100%;
+                    color: $style-color;
+                    &:hover {
+                        background-color: $main-color;
+                        color: #fff;
+                    }
+                }
+                & .active {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+        &__all {
+            text-align: center;
+        }
+        &__ticket { 
+            & a {
+                font-size: 16px;
+                color: $style-color;
+                display: inline-block;
+                margin: 2px;
+                padding: 10px;
+                border: 2px solid $main-color;
+                border-radius: 10px;
+                &:hover {
+                    background-color: $main-color;
+                    cursor: pointer;
+                    color: #fff;
+                }
             }
         }
     }

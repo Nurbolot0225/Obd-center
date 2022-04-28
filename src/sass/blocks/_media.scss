@@ -287,9 +287,15 @@
         }
     }
     .stages {
-        padding: 20px 15px;
-        &__box {
-            border: none;
+        padding: 20px 0;
+        &__number {
+            margin-top: 15px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            font-size: 17px;
+            line-height: 24px;
         }
     }
     .price {
@@ -327,6 +333,15 @@
             margin-bottom: 45px;
         }
     }
+    .tab {
+        &-content {
+          &-scroll {
+            overflow: scroll;
+            width: 100%;
+            height: 200px;
+          }
+        }
+    }
     .footer {
         &__descr {
             width: 350px;
@@ -359,7 +374,7 @@
         text-align: center;
     }
     .btn-show-pulse {
-        width: 300px;
+        width: 350px;
     }
     .header {
         & .navbar-collapse {
@@ -468,6 +483,10 @@
     } 
 }
 @media (max-width: 425px) {
+    .btn-show-pulse {
+        width: 330px;
+        font-size: 14px;
+    }
     .header {
         & .navbar-collapse {
             justify-content: end;
@@ -562,7 +581,9 @@
         text-align: center;
     }
     .btn-show-pulse {
-        width: 280px;
+        display: inline-block;
+        width: 290px;
+        font-size: 13px;
     }
     .header {
         & .navbar-collapse {
@@ -582,7 +603,8 @@
         }
         &__img {
             img {
-                width: 350px;
+                padding: 0;
+                width: 290px;
             }
         }
     }
@@ -664,7 +686,7 @@
     }
     .footer {
         &__descr {
-            width: 350px;
+            width: 300px;
         }
         &__phone {
             &:nth-child(3) {
@@ -722,7 +744,7 @@
         }
         &__img {
             img {
-                width: 300px;
+                width: 285px;
             }
         }
     }
@@ -798,12 +820,16 @@
             font-size: 25px;
             margin-bottom: 40px;
             line-height: 26px;
+    
         }
     }
     .tab {
         &-label {
             font-size: 16px;
             line-height: 23px;
+        }
+        &-content {
+            height: 300px;
         }
     }
     .footer {

@@ -17,7 +17,7 @@
 
 .quest-number {
 	font-size: 22px;
-    font-weight: 400;
+    font-weight: 600;
     color: #333;
 	margin-bottom: 8px;	
 }
@@ -112,6 +112,8 @@
 .quest-prev,
 .quest-back,
 .quest-start {
+    border-radius: 5px;
+    font-size: 16px;
     text-align: center;
     background-color: #4F8FFD;
     color: #fff;	
@@ -122,6 +124,8 @@
 
 .quest-back,
 .quest-start {
+    font-size: 16px;
+    border-radius: 5px;
     padding-top: 2px;
 	float: left;
     margin: 30px 0 0 0;
@@ -130,6 +134,13 @@
 
     background-color: #168a16 !important;
     border-color: #137713 !important
+}
+
+.quest-timer {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .quest-start:hover {
@@ -347,7 +358,29 @@
 	}
 }
 
+@media (max-width: 768px) {
+    .quest-timer {
+        font-size: 20px;
+    } 
+    .quest-start {
+        font-size: 18px;
+    }
+    .answer-text {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 576px) {
+    .quest-timer {
+        display: inline-block;
+        margin-top: 15px;
+        float: left;
+        font-size: 20px;
+    } 
+    .quest-timer-svg {
+        display: inline-block;
+        margin: 12px 7px;
+    }
     .quest-start {
         padding-top: 2px;
         float: left;
@@ -373,5 +406,32 @@
     }
     .quest-text {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    .quest-start {
+        font-size: 18px;
+    }
+    .answer-text {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 375px) {
+    .quest-start {
+        font-size: 18px;
+    }
+    .answer-text {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 320px) {
+    .quest-start {
+        font-size: 18px;
+    }
+    .answer-text {
+        font-size: 17px;
     }
 }

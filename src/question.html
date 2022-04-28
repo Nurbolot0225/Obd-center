@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автошкола ОБД-Центр</title>
-    <!-- CSS only -->
+    <title>ОБД-Центр Онлайн-тест</title>
+    <meta name="description" content="Автошкола ОБД-Центр в центре города Бишкек, по адресу пр. Чуй-215, (Пересекает Т.Молдо) «Автошкола» ведет свою деятельность с 2005 года">
+    <meta name="keywords" content="ОБД-Центр, Автошкола, Автошкола ОБД-Центри Онлайн-тест, Автошкола Онлайн-тест Онлайн-тест пдд, Автошкола Бишкек, Автошкола Онлайн-тест. ОБД-Центр Онлайн-тест">
+    <meta property="og:title" content="ОБД-Центр Онлайн-тест">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Автошкола ОБД-Центр Онлайн-тес">
+    <meta property="og:url" content="">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+     <link rel="manifest" href="img/favicon/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+    <!-- Css style -->
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/question-vicon-32x32.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
@@ -17,18 +40,18 @@
     <link rel="stylesheet" href="css/question.css" />
 </head>
 <body class="body">
-    <!-- контейнер для контента -->
+    <!-- container -->
     <div id="main" class="container">
         <div class="row">
             <div class="col-md-12">
                 <article>
                     <div class="row">
-                        <div id="questTopButton" class="col-md-6">
+                        <div id="questTopButton" class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
                             <div class="quest-start quest-start-mt">Перезапустить тест</div>
                         </div>
-                        <div id="timerBlock" class="col-md-6" style="text-align:right; float: right;">
-                            <span style="margin-right:10px; margin-top: 30px; display: inline-block; font-weight: 400; font-size: 22px;">Ваши время 20:00</span>
-                            <span style="margin-right:3px;"><svg xmlns="http://www.w3.org/2000/svg" width="19"
+                        <div id="timerBlock" class="col-md-6 col-lg-6 col-sm-6 col-xs-6" style="text-align:right; float: right;">
+                            <span class="quest-timer">Ваши время 20:00</span>
+                            <span class="quest-timer quest-timer-svg"><svg xmlns="http://www.w3.org/2000/svg" width="19"
                                     height="22">
                                     <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
                                         <path stroke="#000" stroke-linecap="square" d="M8.5 3.214V.49"></path>
@@ -44,7 +67,7 @@
                                         </g>
                                     </g>
                                 </svg></span>
-                            <span id="timer" style="font-size: 24px;">--:--</span>
+                            <span id="timer" class="quest-timer">--:--</span>
                         </div>
                     </div>
                     <div id="questMainBlock" class="row">
@@ -112,11 +135,11 @@
     </div>
     </div>
     
-    <!-- connections Script -->
+    <!-- Scripts -->
     <script src="plugins/jQuery/jquery-3.3.1.min.js"></script>
     <script src="plugins/jQuery/jquery-migrate-3.3.1.js"></script>
     <script src="js/script.js"></script>
-    <!-- подключаемые скрипты -->
+    <!-- Pluggable scripts -->
     <script src="js/lang.js"></script>
     <script src="js/utils.js"></script>
 

@@ -41,7 +41,7 @@
     .discount {
         padding: 30px 15px;
         &__bg {
-            padding: 50px 55px 55px 50px;
+            padding: 50px;
         }
     }
     .conditions {
@@ -74,7 +74,7 @@
     .form {
         padding: 5px 15px;
         &__bg {
-            padding: 50px 40px 50px 50px;
+            padding: 45px;
         }
         &__title {
             font-size: 35px;
@@ -147,7 +147,7 @@
             margin-bottom: 45px;
         }
         &__img {
-            margin-top: 20px;
+            margin-top: 30px;
             text-align: center;
             img {
                 width: 480px;
@@ -157,7 +157,7 @@
     .discount {
         padding: 30px 15px;
         &__bg {
-            padding: 45px 50px 50px 45px;
+            padding: 45px;
         }
         &__title {
             font-size: 33px;
@@ -177,9 +177,6 @@
     }
     .stages {
         padding: 20px 15px;
-        &__box {
-            border: none;
-        }
     }
     .price {
         &__bg  {
@@ -202,7 +199,7 @@
     .form {
         padding: 5px 15px;
         &__bg {
-            padding: 50px 40px 50px 50px;
+            padding: 40px;
         }
         &__title {
             font-size: 35px;
@@ -297,8 +294,8 @@
     }
     .price {
         &__bg  {
-            padding: 30px 40px;
-            width: 430px;
+            padding: 30px;
+            width: 350px;
             &-ofset {
                 margin: 0 auto;
                 &:nth-child(1) {
@@ -323,7 +320,7 @@
     .form {
         padding: 5px 15px;
         &__bg {
-            padding: 50px 40px 50px 50px;
+            padding: 40px;
         }
         &__title {
             font-size: 32px;
@@ -356,7 +353,7 @@
         width: 300px;
     }
     .section-title {
-        font-size: 30px;
+        font-size: 28px;
         line-height: 35px;
         margin-bottom: 8px;
         text-align: center;
@@ -377,7 +374,7 @@
         }
     }
     .avto {
-        padding: 50px 0 0 0;
+        padding: 25px 0 0 0;
         &__descr {
             margin-bottom: 45px;
         }
@@ -392,8 +389,11 @@
         &__bg {
             padding: 40px;
         }
+        &__descr {
+            font-size: 15px;   
+        }
         &__title {
-            font-size: 30px;
+            font-size: 27px;
             line-height: 35px;
             margin-bottom: 40px;
         }
@@ -449,7 +449,7 @@
     .form {
         padding: 5px 15px;
         &__bg {
-            padding: 50px 40px 50px 50px;
+            padding: 40px;
         }
         &__title {
             font-size: 32px;
@@ -481,13 +481,65 @@
         }
     }
     .avto {
-        padding: 35px 0 0 0;
+        padding-top: 20px;
         &__img {
             img {
                 width: 350px;
             }
         }
     }
+    .price {
+        &__bg  {
+            padding: 30px;
+            width: 320px;
+            &-ofset {
+                // margin: 0 auto
+                &:nth-child(1) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &__category {
+            font-size: 23px;
+            margin-bottom: 13px;
+        }
+        &__old {
+            font-size: 17px;
+        }
+        &__summa {
+            font-size: 32px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .faq {
+        padding: 30px 0;
+    }
+    // Layout
+    .row {
+        display:flex;
+        .col {
+            flex: 1;
+        }
+    }
+    /* Accordion styles */
+    .tabs {
+        overflow: hidden;
+        box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+    }
+    .tab {
+        &-label {
+            font-size: 16px;
+        }
+    }
+    .map {
+        padding: 0;  
+        &__btn {
+            margin-top: 30px;
+            text-align: center;
+        }    
+    }   
 }
 @media (max-width: 375px) {
     .button__link {
@@ -504,7 +556,7 @@
         width: 250px;
     }
     .section-title {
-        font-size: 29px;
+        font-size: 27px;
         line-height: 33px;
         margin-bottom: 8px;
         text-align: center;
@@ -524,9 +576,9 @@
         }
     }
     .avto {
-        padding: 30px 0 0 0;
+        padding: 20px 0 0 0;
         &__descr {
-            margin-bottom: 45px;
+            margin-bottom: 25px;
         }
         &__img {
             img {
@@ -535,12 +587,12 @@
         }
     }
     .discount {
-        padding: 30px 15px;
+        padding: 20px 15px;
         &__bg {
             padding: 40px;
         }
         &__title {
-            font-size: 30px;
+            font-size: 28px;
             line-height: 35px;
             margin-bottom: 40px;
         }
@@ -557,7 +609,7 @@
         }
     }
     .conditions {
-        padding: 20px 15px;
+        padding: 15px;
         li {
             padding: 0 0 15px 5px;
         }
@@ -569,8 +621,9 @@
         }
     }
     .price {
+        padding: 0;
         &__bg  {
-            padding: 30px 40px;
+            padding: 25px;
             width: 300px;
             &-ofset {
                 margin: 0 auto;
@@ -596,10 +649,10 @@
     .form {
         padding: 5px 15px;
         &__bg {
-            padding: 40px;
+            padding: 30px;
         }
         &__title {
-            font-size: 30px;
+            font-size: 27px;
             margin-bottom: 40px
         }
     }
@@ -627,7 +680,7 @@
 @media (max-width: 320px) {
     .button__link {
         &-discount {
-            width: 200px;
+            width: 240px;
         }  
         &-price {
             font-size: 15px;
@@ -637,7 +690,7 @@
         }
     }
     .button__form {
-        width: 200px;
+        width: 240px;
         text-align: center;
     }
     .section-title {
@@ -662,7 +715,7 @@
         }
     }
     .avto {
-        padding: 30px 0 0 0;
+        padding: 15px 0 0 0;
         &__descr {
             margin-bottom: 40px;
             line-height: 22px;
@@ -674,15 +727,15 @@
         }
     }
     .discount {
-        padding: 25px 15px;
+        padding: 10px;
         &__bg {
-            padding: 40px;
+            padding: 25px;
         }
         &__descr {
-            font-size: 15px;
+            font-size: 14px;
         }
         &__title {
-            font-size: 25px;
+            font-size: 24px;
             line-height: 27px;
             margin-bottom: 35px;
         }
@@ -690,7 +743,7 @@
             flex-direction: column;
             align-items: center;
             input {
-                width: 200px;
+                width: 230px;
                 margin: 0 0 35px 0;
                 &:nth-child(2) {
                     margin-bottom: 40px;
@@ -701,7 +754,7 @@
     .conditions {
         padding: 15px 15px;
         li {
-            padding: 0 0 15px 5px;
+            padding: 0 0 12px 5px;
         }
     }
     .stages {
@@ -712,8 +765,8 @@
     }
     .price {
         &__bg  {
-            padding: 30px;
-            width: 270px;
+            padding: 25px;
+            width: 260px;
             &-ofset {
                 margin: 0 auto;
                 &:nth-child(1) {
@@ -733,13 +786,13 @@
             margin-bottom: 0;
         }
         &__descr {
-            margin: 10px 0;
+            margin: 12px 0;
         }
     }
     .form {
         padding: 5px 15px;
         &__bg {
-            padding: 50px 40px 50px 50px;
+            padding: 35px;
         }
         &__title {
             font-size: 25px;
@@ -749,7 +802,7 @@
     }
     .tab {
         &-label {
-            font-size: 17px;
+            font-size: 16px;
             line-height: 23px;
         }
     }

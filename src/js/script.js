@@ -1,33 +1,3 @@
-$(document).ready(function() {
-    $(".burger").click(function(event) {
-        $(".burger").toggleClass("burger-active");
-        $(".menu__nav").toggleClass("menu__nav-active");
-    })
-});
-
-// Faq
-let faq__item = function () {
-    let data = $(".faqs__item").attr("data-faqs");
-
-    $(".faq__link").on("click", function() {
-        if (data === "close"){
-            $(".faq__descr").slideUp();
-            if ($(this).hasClass("active")){
-            $(this).toggleClass("active");
-        }
-        else{
-            $(".faq__link").removeClass("active");
-            $(this).toggleClass("active")
-        }
-        }
-        else {
-            $(this).toggleClass("active");
-        }
-        $(this).next(".faq__descr").not(":animated").slideToggle();
-    });
-}
-faq__item();
-
 $(document).ready(function(){
 	$('.header a').click(function(e){
     	if($(this).attr('href').indexOf('#') != -1){ // Проверяем, является и ссылка действительно якорной ссылкой.
@@ -46,27 +16,6 @@ $(document).ready(function(){
 
 $('input[name=phone]').mask("+996 (111) 11-11-11");
 
-// Smooth scroll and pageup 
-
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1600) {
-        $('.pageup').fadeIn();
-    } else {
-        $('.pageup').fadeOut();
-    }
-});
-
-$(document).ready(function(){
-    $("a[href*=#header]").on("click", function(e){
-      var anchor = $(this);
-      $('html, body').stop().animate({
-        scrollTop: $(anchor.attr('href')).offset().top
-      }, 777);
-      e.preventDefault();
-      return false;
-    });
-});
-
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("header");
@@ -78,4 +27,25 @@ function myFunction() {
   } else {
     navbar.classList.remove("header__sticky");
   }
-}
+};
+
+// Smooth scroll and pageup 
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+  } else {
+      $('.pageup').fadeOut();
+  }
+});
+
+$(document).ready(function(){
+  $("a[href*=#up]").on("click", function(e){
+    var anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $(anchor.attr('href')).offset().top
+    }, 777);
+    e.preventDefault();
+    return false;
+  });
+});

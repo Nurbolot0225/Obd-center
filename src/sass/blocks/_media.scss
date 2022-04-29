@@ -1,28 +1,855 @@
 @media (max-width: 1200px) {
-    
-}
-@media (max-width: 992px) {
     .section-title {
-        text-align: center;
-        font-size: 36px;
+        font-size: 37px;
+        line-height: 46px;
+        margin-bottom: 20px;
+    }
+    .btn-show-pulse {
+        display: inline-block;
+        padding: 13px 50px;
+    }
+    .banner {
+        &__time {
+            font-size: 16px;
+        }
+        &__address {
+            font-size: 16px;
+        }
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 9px 14px;
+            }
+        }
     }
     .avto {
-       &__btn {
-          text-align: center;
-       }
-       &__img {
-           margin-top: 15px;
-           text-align: center;
-       }
+        padding: 50px 0 0 0;
+        &__descr {
+            margin-bottom: 45px;
+        }
+        &__img {
+            img {
+                width: 480px;
+            }
+        }
     }
-    
+    .discount {
+        padding: 30px 15px;
+        &__bg {
+            padding: 50px;
+        }
+    }
+    .conditions {
+        padding: 30px 15px;
+        li {
+            padding: 0 0 20px 5px;
+        }
+    }
+    .stages {
+        padding: 30px 15px;
+    }
+    .price {
+        &__bg  {
+            padding: 30px 50px 32px 50px;
+        }
+        &__category {
+            font-size: 25px;
+            margin-bottom: 13px;
+        }
+        &__old {
+            font-size: 19px;
+        }
+        &__summa {
+            font-size: 38px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .form {
+        padding: 5px 15px;
+        &__bg {
+            padding: 45px;
+        }
+        &__title {
+            font-size: 35px;
+            margin-bottom: 60px;
+        }
+    }
+    .footer {
+        padding: 45px 0 0 0;
+        &__title {
+            font-size: 38px
+        }
+        &__link {
+            display: inline-block;
+            margin: 15px 0;
+            i { 
+                margin: 0 10px 0 0;
+                width: 45px;
+                height: 45px;
+                font-size: 33px;
+            }
+        }
+    }   
+}
+@media (max-width: 992px) {
+    .banner {
+        display: none;
+    }
+    .button__link {
+        &-discount {
+            padding: 16px 60px;
+        }  
+    }
+    .button__form {
+        padding: 16px 50px;
+    }
+    .section-title {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .btn-show-pulse {
+        width: 350px;
+    }
+    .banner {
+        &__time {
+            font-size: 16px;
+        }
+        &__address {
+            font-size: 16px;
+        }
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 9px 14px;
+            }
+        }
+    }
+    .avto {
+        padding: 50px 0 0 0;
+        &__btn {
+            text-align: center;
+        }
+        &__descr {
+            margin-bottom: 45px;
+        }
+        &__img {
+            margin-top: 30px;
+            text-align: center;
+            img {
+                width: 480px;
+            }
+        }
+    }
+    .discount {
+        padding: 30px 15px;
+        &__bg {
+            padding: 45px;
+        }
+        &__title {
+            font-size: 33px;
+            margin-bottom: 45px;
+        }
+        &__form {
+            input {
+                width: 195px;
+            }
+        }
+    }
+    .conditions {
+        padding: 20px 15px;
+        li {
+            padding: 0 0 20px 5px;
+        }
+    }
+    .stages {
+        padding: 20px 15px;
+    }
+    .price {
+        &__bg  {
+            padding: 30px 40px;
+        }
+        &__category {
+            font-size: 23px;
+            margin-bottom: 13px;
+        }
+        &__old {
+            font-size: 17px;
+        }
+        &__summa {
+            font-size: 32px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .form {
+        padding: 5px 15px;
+        &__bg {
+            padding: 40px;
+        }
+        &__title {
+            font-size: 35px;
+            margin-bottom: 45px;
+        }
+    }
+    .footer {
+        padding: 40px 0 0 0;
+        &__title {
+            font-size: 35px
+        }
+        &__link {
+            display: inline-block;
+            margin: 15px 0;
+            i { 
+                margin: 0 10px 0 0;
+                width: 45px;
+                height: 45px;
+                font-size: 33px;
+            }
+        }
+    } 
+}
+@media (max-width: 768px) {
+    .button__link {
+        &-discount {
+            width: 350px;
+            padding: 16px 50px;
+        }  
+        &-price {
+            width: 250px;
+            text-align: center;
+            padding: 16px 50px;
+        }
+    }
+    .button__form {
+        width: 350px;
+        padding: 16px 50px;
+    }
+    .section-title {
+        font-size: 32px;
+        line-height: 45px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    .btn-show-pulse {
+        width: 350px;
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 8px 13px;
+            }
+        }
+    }
+    .discount {
+        padding: 30px 15px;
+        &__bg {
+            padding: 40px;
+        }
+        &__title {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        &__form {
+            flex-direction: column;
+            align-items: center;
+            input {
+                width: 350px;
+                margin: 0 0 35px 0;
+                &:nth-child(2) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .conditions {
+        padding: 20px 15px;
+        li {
+            padding: 0 0 20px 5px;
+        }
+    }
+    .stages {
+        padding: 20px 0;
+        &__number {
+            margin-top: 15px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &__descr {
+            font-size: 17px;
+            line-height: 24px;
+        }
+    }
+    .price {
+        &__bg  {
+            padding: 30px;
+            width: 350px;
+            &-ofset {
+                margin: 0 auto;
+                &:nth-child(1) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &__category {
+            font-size: 23px;
+            margin-bottom: 13px;
+        }
+        &__old {
+            font-size: 17px;
+        }
+        &__summa {
+            font-size: 32px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .form {
+        padding: 5px 15px;
+        &__bg {
+            padding: 40px;
+        }
+        &__title {
+            font-size: 32px;
+            margin-bottom: 45px;
+        }
+    }
+    .tab {
+        &-content {
+          &-scroll {
+            overflow: scroll;
+            width: 100%;
+            height: 200px;
+          }
+        }
+    }
+    .footer {
+        &__descr {
+            width: 350px;
+        }
+        &__phone {
+            &:nth-child(3) {
+                padding-bottom: 15px;
+            }
+        }
+    } 
 }
 @media (max-width: 576px) {
-    
+    .button__link {
+        &-discount {
+            width: 300px;
+        }  
+        &-price {
+            width: 250px;
+            text-align: center;
+            padding: 16px 50px;
+        }
+    }
+    .button__form {
+        width: 300px;
+    }
+    .section-title {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    .btn-show-pulse {
+        width: 350px;
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 8px 10px;
+                font-size: 17px;
+            }
+        }
+    }
+    .avto {
+        padding: 25px 0 0 0;
+        &__descr {
+            margin-bottom: 45px;
+        }
+        &__img {
+            img {
+                width: 400px;
+            }
+        }
+    }
+    .discount {
+        padding: 30px 15px;
+        &__bg {
+            padding: 40px;
+        }
+        &__descr {
+            font-size: 15px;   
+        }
+        &__title {
+            font-size: 27px;
+            line-height: 35px;
+            margin-bottom: 40px;
+        }
+        &__form {
+            flex-direction: column;
+            align-items: center;
+            input {
+                width: 300px;
+                margin: 0 0 35px 0;
+                &:nth-child(2) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .conditions {
+        padding: 20px 15px;
+        li {
+            padding: 0 0 15px 5px;
+        }
+    }
+    .stages {
+        padding: 20px 15px;
+        &__box {
+            border: none;
+        }
+    }
+    .price {
+        &__bg  {
+            padding: 30px 40px;
+            width: 350px;
+            &-ofset {
+                margin: 0 auto;
+                &:nth-child(1) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &__category {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &__old {
+            font-size: 16px;
+        }
+        &__summa {
+            font-size: 30px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .form {
+        padding: 5px 15px;
+        &__bg {
+            padding: 40px;
+        }
+        &__title {
+            font-size: 32px;
+            margin-bottom: 45px;
+        }
+    }
+    .footer {
+        &__descr {
+            width: 350px;
+        }
+        &__phone {
+            &:nth-child(3) {
+                padding-bottom: 15px;
+            }
+        }
+    } 
+}
+@media (max-width: 425px) {
+    .btn-show-pulse {
+        width: 330px;
+        font-size: 14px;
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 8px 9px;
+                font-size: 16px;
+            }
+        }
+    }
+    .avto {
+        padding-top: 20px;
+        &__img {
+            img {
+                width: 350px;
+            }
+        }
+    }
+    .price {
+        &__bg  {
+            padding: 30px;
+            width: 320px;
+            &-ofset {
+                // margin: 0 auto
+                &:nth-child(1) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &__category {
+            font-size: 23px;
+            margin-bottom: 13px;
+        }
+        &__old {
+            font-size: 17px;
+        }
+        &__summa {
+            font-size: 32px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .faq {
+        padding: 30px 0;
+    }
+    // Layout
+    .row {
+        display:flex;
+        .col {
+            flex: 1;
+        }
+    }
+    /* Accordion styles */
+    .tabs {
+        overflow: hidden;
+        box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+    }
+    .tab {
+        &-label {
+            font-size: 16px;
+        }
+    }
+    .map {
+        padding: 0;  
+        &__btn {
+            margin-top: 30px;
+            text-align: center;
+        }    
+    }   
 }
 @media (max-width: 375px) {
-    
+    .button__link {
+        &-discount {
+            width: 250px;
+        }  
+        &-price {
+            width: 200px;
+            text-align: center;
+            padding: 16px 50px;
+        }
+    }
+    .button__form {
+        width: 250px;
+    }
+    .section-title {
+        font-size: 27px;
+        line-height: 33px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    .btn-show-pulse {
+        display: inline-block;
+        width: 290px;
+        font-size: 13px;
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 8px 9px;
+            }
+        }
+    }
+    .avto {
+        padding: 20px 0 0 0;
+        &__descr {
+            margin-bottom: 25px;
+        }
+        &__img {
+            img {
+                padding: 0;
+                width: 290px;
+            }
+        }
+    }
+    .discount {
+        padding: 20px 15px;
+        &__bg {
+            padding: 40px;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 35px;
+            margin-bottom: 40px;
+        }
+        &__form {
+            flex-direction: column;
+            align-items: center;
+            input {
+                width: 250px;
+                margin: 0 0 35px 0;
+                &:nth-child(2) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .conditions {
+        padding: 15px;
+        li {
+            padding: 0 0 15px 5px;
+        }
+    }
+    .stages {
+        padding: 20px 15px;
+        &__box {
+            border: none;
+        }
+    }
+    .price {
+        padding: 0;
+        &__bg  {
+            padding: 25px;
+            width: 300px;
+            &-ofset {
+                margin: 0 auto;
+                &:nth-child(1) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &__category {
+            font-size: 19px;
+            margin-bottom: 7px;
+        }
+        &__old {
+            font-size: 15px;
+        }
+        &__summa {
+            font-size: 28px;
+        }
+        &__descr {
+            margin: 20px 0;
+        }
+    }
+    .form {
+        padding: 5px 15px;
+        &__bg {
+            padding: 30px;
+        }
+        &__title {
+            font-size: 27px;
+            margin-bottom: 40px
+        }
+    }
+    .tab {
+        &-label {
+            font-size: 17px;
+            line-height: 23px;
+        }
+    }
+    .footer {
+        &__descr {
+            width: 300px;
+        }
+        &__phone {
+            &:nth-child(3) {
+                padding-bottom: 15px;
+            }
+        }
+        &__proverbs {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
 }
 @media (max-width: 320px) {
+    .button__link {
+        &-discount {
+            width: 240px;
+        }  
+        &-price {
+            font-size: 15px;
+            width: 200px;
+            text-align: center;
+            padding: 16px 50px;
+        }
+    }
+    .button__form {
+        width: 240px;
+        text-align: center;
+    }
+    .section-title {
+        font-size: 25px;
+        line-height: 33px;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    .btn-show-pulse {
+        width: 250px;
+    }
+    .header {
+        & .navbar-collapse {
+            justify-content: end;
+            & .nav-item {
+                margin: 0 5px;
+            }
+            & .nav-item a {
+                padding: 8px 8px;
+                font-size: 16px;
+            }
+        }
+    }
+    .avto {
+        padding: 15px 0 0 0;
+        &__descr {
+            margin-bottom: 40px;
+            line-height: 22px;
+        }
+        &__img {
+            img {
+                width: 285px;
+            }
+        }
+    }
+    .discount {
+        padding: 10px;
+        &__bg {
+            padding: 25px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 27px;
+            margin-bottom: 35px;
+        }
+        &__form {
+            flex-direction: column;
+            align-items: center;
+            input {
+                width: 230px;
+                margin: 0 0 35px 0;
+                &:nth-child(2) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .conditions {
+        padding: 15px 15px;
+        li {
+            padding: 0 0 12px 5px;
+        }
+    }
+    .stages {
+        padding: 15px 15px;
+        &__box {
+            border: none;
+        }
+    }
+    .price {
+        &__bg  {
+            padding: 25px;
+            width: 260px;
+            &-ofset {
+                margin: 0 auto;
+                &:nth-child(1) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__category {
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+        &__old {
+            font-size: 13px;
+        }
+        &__summa {
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+        &__descr {
+            margin: 12px 0;
+        }
+    }
+    .form {
+        padding: 5px 15px;
+        &__bg {
+            padding: 35px;
+        }
+        &__title {
+            font-size: 25px;
+            margin-bottom: 40px;
+            line-height: 26px;
     
+        }
+    }
+    .tab {
+        &-label {
+            font-size: 16px;
+            line-height: 23px;
+        }
+        &-content {
+            height: 300px;
+        }
+    }
+    .footer {
+        &__descr {
+            width: 280px;
+            font-size: 16px;
+        }
+        &__contact {
+            font-size: 22px;
+            margin: 10px 0 15px 0;
+        }
+        &__phone {
+            font-size: 17px;
+            &:nth-child(3) {
+                padding-bottom: 15px;
+            }
+        }
+        &__proverbs {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
 }

@@ -47,7 +47,7 @@
         font-weight: 600;
         font-size: 18px;
         color: $style-color;
-        transition: all 500ms ease;
+        transition: all .1 ease-in-out;
         &:hover {
             color: $main-color;
         }

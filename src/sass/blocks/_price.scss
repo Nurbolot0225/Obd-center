@@ -1,22 +1,10 @@
 .price {
-    padding: 30px 0 30px 0;
-    &__title {
-        font-weight: 700;
-        font-size: 39px;
-        color: #2D2D2D;
-        margin-bottom: 10px;
-    }
-    &__subheader {
-        font-weight: 400;
-        font-size: 16px;
-        color: #181818;
-        margin-bottom: 30px;
-    }
+    padding: 30px 15px;
     &__bg {
         background: #FFFFFF;
         border-radius: 19px;
         padding: 38px 60px 42px 60px;
-        box-shadow: 0 14px 28px rgba(158, 152, 152, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 14px 28px rgba(198, 194, 194, 0.25), 0 10px 10px rgba(95, 90, 90, 0.22);
         z-index: 1;
         transition: all .2s linear;
         &:hover {
@@ -49,25 +37,10 @@
     }
     &__descr {
         list-style-type: disc;
-        margin: 30px 0 30px 0;
+        margin: 30px 0;
         font-weight: 400;
         font-size: 14px;
         line-height: 123.19%;
         color: #2D2D2D;
-    }
-    &__button {
-        display: inline-block;
-        background: $main-color;
-        border-radius: 16px;
-        font-size: 16px;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 20px 50px;
-        transition: all 500ms ease;
-        &:hover {
-            background: #fff;
-            color: #FF941F;
-            box-shadow: inset 0 0 0 3px #FF941F;
-        }
     }
 }

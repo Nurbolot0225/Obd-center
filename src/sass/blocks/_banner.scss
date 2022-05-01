@@ -8,7 +8,7 @@
         padding: 3px 10px 0 0;
         i { 
             color: #fff;
-            font-size: 26px;
+            font-size: 23px;
         }
     }
     &__what {
@@ -16,7 +16,7 @@
         padding-left: 6px;
         i { 
             color: #fff;
-            font-size: 26px;  
+            font-size: 23px;  
         }
     }
     &__time {
@@ -33,10 +33,9 @@
         font-size: 17px;
         font-weight: 700;
         color: #fff;
-        & .fas {
-            margin-top: 13px;
-            margin-right: 8px;
-            line-height: 0;
+        i {
+            margin-right: 4px;
+            font-size: 18px;
         }
     }
 }

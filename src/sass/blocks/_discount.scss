@@ -1,10 +1,10 @@
 .discount {
-    padding: 50px 5px;
+    padding: 35px 5px;
     &__bg {
         background: #FFFFFF;
         border-radius: 30px;
         padding: 60px;
-        box-shadow: 0 14px 28px rgba(212, 211, 211, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+        box-shadow: 0 14px 28px rgba(212, 211, 211, 1.25), 0 10px 10px rgba(0,0,0,0.22);
     }
     &__descr {
         display: inline-block;

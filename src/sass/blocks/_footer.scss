@@ -1,5 +1,5 @@
 .footer {
-    padding: 50px 0 0 0;
+    padding: 20px 0 0 0;
     background-color: #fff;
     &__title {
         font-size: 40px;
@@ -54,6 +54,9 @@
     }
     &__mb {
         margin-bottom: 10px;
+    }
+    &__px {
+        padding: 0 20px;
     }
     &__proverbs {
         background-color: $main-color;

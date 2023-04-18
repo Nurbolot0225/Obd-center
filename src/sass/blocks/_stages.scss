@@ -1,81 +1,68 @@
 .stages {
-    padding: 20px 0;
-    &__number {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        background-color: $style-color;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-    &__descr {
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 24px;
-        color: $text-color;
-    }
-}
-
-// .stages {
-//     padding: 30px 0;
-//     counter-reset: box; 
-//     &__box {
-//         position: relative;
-//         margin-top: 20px;
-//         padding-top: 35px;
-//         border-top: 2px dashed #D8D8D8;
-//         &:nth-last-child(1) {
-//             border: none;
-//         }
-//     }
-//     &__number {
-//         position: absolute;
-//         top: -25px;
-//         left: 0;
-//         i {
-//             position: relative;
-//             display: block;
-//             &::after {
-//                 content: '';
-//                 position: absolute;
-//                 width: 45px;
-//                 height: 45px;
-//                 border: 2px dashed #D8D8D8;
-//                 background-color: #FFFF;
-//                 border-radius: 50%;
-//                 z-index: 1;
-//             }
-//             &::before {
-//                 counter-increment: box; /* Инкрементирует счётчик*/
-//                 content: counter(box);
-//                 position: absolute;
-//                 width: 32px;
-//                 height: 32px;
-//                 top: 50%;
-//                 left: 50%;
-//                 transform: translate(20%, 20%);
-//                 display: inline-flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 font-size: 16px;
-//                 font-weight: 700;
-//                 font-style: normal;
-//                 color: #FFFF;
-//                 background-color: $style-color;
-//                 border-radius: 50%;
-//                 z-index: 2;
-//             }
-//         }
-//     }
-//     &__descr {
-//         font-weight: 400;
-//         font-size: 16px;
-//         line-height: 24px;
-//         color: $text-color;
-//     }
-// }
+     padding: 20px 0 20px 0;
+     counter-reset: box;
+     &__box {
+         position: relative;
+         margin-top: 20px;
+         padding-top: 30px;
+         border-top: 2px dashed #D8D8D8;
+         &:nth-last-child(1) {
+             border: none;
+         }
+     }
+     &__number {
+         position: absolute;
+         top: -21px;
+         left: 0;
+         width: 40px;
+         height: 40px;
+         background-color: $style-color;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: #fff;
+         font-size: 18px;
+         margin-bottom: 20px;
+         i {
+             position: relative;
+             display: block;
+             &::after {
+                 content: '';
+                 position: absolute;
+                 width: 45px;
+                 height: 45px;
+                 border: 2px dashed #D8D8D8;
+                 background-color: #FFFF;
+                 border-radius: 50%;
+                 z-index: 1;
+             }
+             &::before {
+                 counter-increment: box; /* Инкрементирует счётчик*/
+                 content: counter(box);
+                 position: absolute;
+                 width: 32px;
+                 height: 32px;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(20%, 20%);
+                 display: inline-flex;
+                 justify-content: center;
+                 align-items: center;
+                 font-size: 16px;
+                 font-weight: 700;
+                 font-style: normal;
+                 color: #FFFF;
+                 background-color: $style-color;
+                 border-radius: 50%;
+                 z-index: 2;
+             }
+         }
+     }
+     &__descr {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 24px;
+         color: $text-color;
+     }
+ }

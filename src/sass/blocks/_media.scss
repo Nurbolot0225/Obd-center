@@ -70,6 +70,9 @@
         &__descr {
             margin: 20px 0;
         }
+        &__mb {
+            margin-bottom: 59px;
+        }
     }
     .form {
         padding: 5px 15px;
@@ -82,7 +85,6 @@
         }
     }
     .footer {
-        padding: 45px 0 0 0;
         &__title {
             font-size: 38px
         }
@@ -195,6 +197,9 @@
         &__descr {
             margin: 20px 0;
         }
+        &__mb {
+            margin-bottom: 59px;
+        }
     }
     .form {
         padding: 5px 15px;
@@ -281,17 +286,23 @@
         }
     }
     .conditions {
-        padding: 20px 15px;
+        padding: 20px 18px;
         li {
             padding: 0 0 20px 5px;
         }
     }
     .stages {
-        padding: 20px 0;
+        padding: 20px 30px;
         &__number {
-            margin-top: 15px;
+            margin-top: 0;
             font-size: 18px;
             margin-bottom: 20px;
+            margin-left: -20px;
+        }
+        &__box {
+            &:nth-last-child(3) {
+                border: none;
+            }
         }
         &__descr {
             font-size: 17px;
@@ -321,6 +332,9 @@
         }
         &__descr {
             margin: 20px 0;
+        }
+        &__mb {
+            margin-bottom: 59px;
         }
     }
     .form {
@@ -353,7 +367,18 @@
         }
     } 
 }
+
 @media (max-width: 576px) {
+    .avto {
+        &__descr {
+            text-align: justify;
+        }
+    }
+    .conditions {
+        &__text {
+            text-align: justify;
+        }
+    }
     .button__link {
         &-discount {
             width: 300px;
@@ -433,7 +458,18 @@
     .stages {
         padding: 20px 15px;
         &__box {
-            border: none;
+            border-left: 2px dashed #D8D8D8;
+            margin-left: 20px;
+            border-top: none;
+            &:nth-last-child(3) {
+                border-left: 2px dashed #D8D8D8;
+            }
+        }
+        &__number {
+            margin-right: 20px;
+        }
+        &__descr {
+            margin-left: 20px;
         }
     }
     .price {
@@ -508,6 +544,7 @@
         }
     }
     .price {
+        display: none;
         &__bg  {
             padding: 30px;
             width: 320px;
@@ -533,6 +570,7 @@
         }
     }
     .faq {
+        display: none;
         padding: 30px 0;
     }
     // Layout
@@ -639,7 +677,7 @@
     .stages {
         padding: 20px 15px;
         &__box {
-            border: none;
+            border-left: 2px dashed #D8D8D8;
         }
     }
     .price {
@@ -782,7 +820,7 @@
     .stages {
         padding: 15px 15px;
         &__box {
-            border: none;
+            border-left: 2px dashed #D8D8D8;
         }
     }
     .price {

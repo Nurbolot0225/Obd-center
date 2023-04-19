@@ -549,18 +549,14 @@
             margin: 20px 0;
         }
     }
-    // Layout
+
     .row {
         display:flex;
         .col {
             flex: 1;
         }
     }
-    /* Accordion styles */
-    .tabs {
-        overflow: hidden;
-        box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
-    }
+
     .tab {
         &-label {
             font-size: 15px;

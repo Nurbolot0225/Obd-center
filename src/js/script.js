@@ -66,3 +66,9 @@ $(document).ready(function(){
     } 
   });
 });
+
+const menuLink = document.querySelectorAll('.nav-link')
+const activeElement = document.querySelector('.navbar-collapse')
+menuLink.forEach(el => el.addEventListener('click', function () {
+    activeElement.classList.remove('show')
+}))

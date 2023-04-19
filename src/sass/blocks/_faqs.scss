@@ -1,17 +1,16 @@
 .faq {
     padding: 20px 20px;
 }
-// Layout
+
 .row {
     display:flex;
     .col {
         flex: 1;
     }
 }
-/* Accordion styles */
+
 .tabs {
     overflow: hidden;
-    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
 }
 .tab {
     width: 100%;
@@ -25,9 +24,7 @@
     &-label {
         display: flex;
         justify-content: space-between;
-        padding: 1em;
-        background-color: rgb(236, 232, 232);
-        opacity: 8;
+        padding: 1em;;
         font-weight: 600;
         font-size: 18px;
         line-height: 24px;

@@ -286,7 +286,7 @@
         }
     }
     .conditions {
-        padding: 20px 18px;
+        padding: 20px 20px;
         li {
             padding: 0 0 20px 5px;
         }
@@ -369,16 +369,6 @@
 }
 
 @media (max-width: 576px) {
-    .avto {
-        &__descr {
-            text-align: justify;
-        }
-    }
-    .conditions {
-        &__text {
-            text-align: justify;
-        }
-    }
     .button__link {
         &-discount {
             width: 300px;
@@ -450,7 +440,7 @@
         }
     }
     .conditions {
-        padding: 20px 15px;
+        padding: 20px 20px;
         li {
             padding: 0 0 15px 5px;
         }
@@ -544,7 +534,6 @@
         }
     }
     .price {
-        display: none;
         &__bg  {
             padding: 30px;
             width: 320px;
@@ -590,8 +579,7 @@
             font-size: 16px;
         }
     }
-    .map {
-        padding: 0;  
+    .map {;
         &__btn {
             margin-top: 30px;
             text-align: center;

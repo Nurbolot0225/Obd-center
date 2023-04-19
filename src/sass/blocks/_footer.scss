@@ -47,16 +47,13 @@
         font-weight: 600;
         font-size: 18px;
         color: $style-color;
-        transition: all .1 ease-in-out;
+        transition: all 1s ease-in-out;
         &:hover {
             color: $main-color;
         }
     }
     &__mb {
         margin-bottom: 10px;
-    }
-    &__px {
-        padding: 0 20px;
     }
     &__proverbs {
         background-color: $main-color;

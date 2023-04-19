@@ -27,7 +27,7 @@ function myFunction() {
   } else {
     navbar.classList.remove("header__sticky");
   }
-};
+}
 
 // Smooth scroll and pageup 
 
